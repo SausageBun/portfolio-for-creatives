@@ -726,8 +726,8 @@ a:active {
 
   .wordmark:hover {
     width: 3rem;
-    fill: rgb(0, 60, 113);
-    transition: 100ms;
+    fill: white;
+    transition: 150ms;
     transition-timing-function: ease-in-out;
     /* TODO: Adjust the width of the logo on large devices here. */
   }
