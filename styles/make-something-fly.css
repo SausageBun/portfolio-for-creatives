@@ -4,13 +4,13 @@
 
 .flier > * {
   /* Adjust animation duration to change the element’s speed */
-  animation: fly 120s linear infinite;
+  animation: fly 80s linear infinite;
   pointer-events: none !important;
   top: 0;
   left: 0;
   transform: translateX(-320%) translateY(-320%) rotateZ(0);
   position: fixed;
-  animation-delay: 60s;
+  animation-delay: 1s;
   z-index: 999999;
   width: 5rem;
 }

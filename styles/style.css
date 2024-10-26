@@ -101,10 +101,10 @@ html {
   --overlay-color: #003c71;
   --overlay-title-color: #ffffff;
   --overlay-description-color: #ffffff;
-  --hyperlink-color: #ffd900;
+  --hyperlink-color: white;
   --hyperlink-alternate-color: orangered;
   --hover-color: white;
-  --visited-color: #ffd900;
+  --visited-color: white;
   --project-title-color: #ffd900;
   --project-sidebar-background-color: transparent;
   --project-sidebar-text-color: white;
@@ -124,6 +124,11 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+  -ms-overflow-style: none; /* IE and Edge */
+}
+
+body::-webkit-scrollbar {
+  display: none; /* Hide scrollbar for Chrome, Safari and Opera */
 }
 
 /* The ::selection CSS pseudo-element applies styles to the part of a document that has been highlighted by the user (such as clicking and dragging the mouse across text). */
@@ -243,10 +248,10 @@ a:link {
   position: absolute;
   display: block;
   width: 100%;
-  height: 2px;
+  height: 1.5px;
   bottom: 0;
   left: 0;
-  background-color: var(--visited-color);
+  background-color: #ffd900;
   transform: scaleX(0);
   transform-origin: top left;
   transition: transform 0.2s ease;
@@ -274,7 +279,7 @@ a:active {
 }
 
 .navigation-arrow {
-  color: var(--alt-background-color);
+  color: #ffd900;
 }
 
 .navigation-arrow:link {
@@ -285,9 +290,9 @@ a:active {
 
 .navigation-arrow:active,
 .navigation-arrow:hover {
-  color: var(--accent-color);
+  color: #ffd900;
   -webkit-text-stroke-width: 2px;
-  -webkit-text-stroke-color: var(--accent-color);
+  -webkit-text-stroke-color: #ffd900;
 }
 
 .colored-link {
@@ -402,6 +407,7 @@ a:active {
 
 .work-wrapper {
   flex: 1;
+  margin-bottom: 2rem;
 }
 
 /* Padding around work grid and project page */
@@ -503,7 +509,7 @@ a:active {
   display: grid;
   grid-template-columns: 1fr;
   grid-gap: 3rem;
-  min-height: 100vh;
+  min-height: 60vh;
   background: var(--background-color-footer);
   padding: 1rem;
 }
@@ -526,6 +532,7 @@ a:active {
 .footer-item-4 {
   grid-column: 1 / 2;
   grid-row: 4 / 5;
+  margin-bottom: 2rem;
 }
 
 .awards-list {
@@ -546,6 +553,7 @@ a:active {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  margin-bottom: 2rem;
 }
 
 /* Sidebar */
@@ -746,14 +754,14 @@ a:active {
   }
 
   .wordmark {
-    width: 3rem;
+    width: 2.5rem;
     fill: rgb(253, 217, 0);
     transition: 0.2s;
     /* TODO: Adjust the width of the logo on large devices here. */
   }
 
   .wordmark:hover {
-    width: 3rem;
+    width: 2.5rem;
     fill: white;
     /* TODO: Adjust the width of the logo on large devices here. */
   }
@@ -782,7 +790,7 @@ a:active {
   }
 
   .about {
-    padding: 4rem;
+    padding: 2rem;
     grid-template-columns: 1fr 1fr 1fr;
   }
 
@@ -848,7 +856,7 @@ a:active {
 
   /* Sidebar on Large Devices */
   .project-aside {
-    width: 35%;
+    width: 30%;
     height: 65vh;
     position: -webkit-sticky;
     position: sticky;
