@@ -768,9 +768,6 @@ a:active {
 /* Medium devices (tablets, 768px and up) */
 
 @media (min-width: 768px) {
-  .project-image {
-    margin-bottom: 1.5rem;
-  }
   /* TODO: Add styles here for medium devices. */
 }
 
@@ -914,7 +911,6 @@ a:active {
 
   .project-image {
     min-height: 70vh;
-    margin-bottom: 1.5rem;
 
     /* TODO: Delete min-height if you want to remove space between project images on project pages on large devices. It is used for the demo page only. */
   }
