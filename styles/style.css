@@ -236,6 +236,11 @@ a:link {
   transition: 0.2s;
 }
 
+.social-item::before {
+  content: ">>";
+  color: #ffd900;
+}
+
 .a-underline {
   position: relative;
 }
@@ -718,6 +723,8 @@ a:active {
 ██      ██ ███████ ██████  ██ ██   ██      ██████   ██████  ███████ ██   ██ ██ ███████ ███████ 
 
 */
+
+/* Smalldevices (phones, 350px and up) */
 
 @media (min-width: 350px) {
   .project-image {
