@@ -719,7 +719,7 @@ a:active {
 
 */
 
-@media (min-width: 455px) {
+@media (min-width: 400px) {
   .project-image {
     margin-bottom: 1.5rem;
   }
@@ -737,8 +737,7 @@ a:active {
   }
 
   .footer-item-4 {
-    display: flex;
-    justify-content: center;
+    text-align: center;
   }
 }
 
