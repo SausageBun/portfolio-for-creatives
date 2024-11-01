@@ -765,14 +765,6 @@ a:active {
 
 */
 
-/* Smalldevices (phones, 350px and up) */
-
-@media (min-width: 350px) {
-  .footer-item-4 {
-    text-align: center;
-  }
-}
-
 /* Medium devices (tablets, 768px and up) */
 
 @media (min-width: 768px) {
