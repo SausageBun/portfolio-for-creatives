@@ -719,9 +719,15 @@ a:active {
 
 */
 
-@media (min-width: 500px) {
+@media (min-width: 480px) {
   .project-image {
     margin-bottom: 1.5rem;
+  }
+  .overlay {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
   }
 }
 
