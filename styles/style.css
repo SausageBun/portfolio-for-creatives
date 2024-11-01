@@ -719,7 +719,7 @@ a:active {
 
 */
 
-@media (min-width: 400px) {
+@media (min-width: 350px) {
   .project-image {
     margin-bottom: 1.5rem;
   }
