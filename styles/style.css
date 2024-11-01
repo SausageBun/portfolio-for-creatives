@@ -220,6 +220,9 @@ em {
 }
 
 .overlay-title {
+  display: flex;
+  justify-content: center;
+  text-align: center;
   font-size: 2.875rem;
   color: var(--overlay-title-color);
 }
@@ -458,6 +461,7 @@ a:active {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  text-align: center;
   padding: 1em;
   background-color: var(--overlay-color);
   transition: opacity 0.3s, visibility 0.3s;
@@ -545,6 +549,7 @@ a:active {
   grid-column: 1 / 2;
   grid-row: 4 / 5;
   margin-bottom: 2rem;
+  text-align: center;
 }
 
 .awards-list {
@@ -602,6 +607,7 @@ a:active {
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-bottom: 1.5rem;
 }
 
 .text-section {
@@ -764,22 +770,6 @@ a:active {
 /* Smalldevices (phones, 350px and up) */
 
 @media (min-width: 350px) {
-  .project-image {
-    margin-bottom: 1.5rem;
-  }
-  .overlay {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-  }
-
-  .overlay-title {
-    display: flex;
-    justify-content: center;
-    text-align: center;
-  }
-
   .footer-item-4 {
     text-align: center;
   }
