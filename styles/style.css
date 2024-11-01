@@ -692,6 +692,20 @@ a:active {
 
 /* The best 404 pages have become an art in themselves. Your 404 error page is an opportunity to make a memorable impression on your visitors when they don’t land exactly where they hoped. */
 
+.error-logo {
+  width: 10rem;
+  color: #ffd900;
+  transition: 0.2s;
+  margin-bottom: 2rem;
+  /* TODO: Adjust the width of the logo on large devices here. */
+}
+
+.error-logo:hover {
+  width: 15rem;
+  fill: white;
+  /* TODO: Adjust the width of the logo on large devices here. */
+}
+
 /*
 
 ██████  ██       █████  ██    ██ 
