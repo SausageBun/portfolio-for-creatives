@@ -361,7 +361,8 @@ a:active {
 
 .logo {
   width: 3rem;
-  /* TODO: Adjust the width of the logo on mobile devices here. */
+  fill: rgb(253, 217, 0);
+  /* DONE: Adjust the width of the logo on mobile devices here. */
 }
 
 .hero-headline-wrapper {
@@ -624,13 +625,8 @@ a:active {
   text-align: center;
   width: 100%;
   min-height: 100vh;
-  /* TODO: Delete the following if you do not want a grainy gradient background on index.html. Be careful not to delete the closing } */
-  background: linear-gradient(
-      0deg,
-      rgba(0, 0, 0, 1),
-      var(--background-color-holding-page)
-    ),
-    url(/assets/temp/noise.svg);
+  /* DONE: Delete the following if you do not want a grainy gradient background on index.html. Be careful not to delete the closing } */
+  background: #222;
   /* For more on grainy gradients see https://grainy-gradients.vercel.app/ */
 }
 
@@ -723,9 +719,18 @@ a:active {
 
 */
 
+@media (min-width: 500px) {
+  .project-image {
+    margin-bottom: 1.5rem;
+  }
+}
+
 /* Medium devices (tablets, 768px and up) */
 
 @media (min-width: 768px) {
+  .project-image {
+    margin-bottom: 1.5rem;
+  }
   /* TODO: Add styles here for medium devices. */
 }
 
