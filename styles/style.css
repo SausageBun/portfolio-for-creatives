@@ -756,7 +756,7 @@ a:active {
   .wordmark {
     width: 2.5rem;
     fill: rgb(253, 217, 0);
-    transition: 0.2s;
+    transition: 0.1s ease-in-out;
     /* TODO: Adjust the width of the logo on large devices here. */
   }
 
