@@ -754,14 +754,14 @@ a:active {
   }
 
   .wordmark {
-    width: 2.5rem;
+    width: 3rem;
     fill: rgb(253, 217, 0);
     transition: 0.1s ease-in-out;
     /* TODO: Adjust the width of the logo on large devices here. */
   }
 
   .wordmark:hover {
-    width: 2.5rem;
+    width: 3rem;
     fill: white;
     /* TODO: Adjust the width of the logo on large devices here. */
   }
@@ -847,6 +847,7 @@ a:active {
   .portfolio,
   .project-wrapper {
     padding: 0.5rem;
+    margin-top: 2rem;
   }
 
   /* Project Page Flex Direction on Large Devices */
