@@ -241,6 +241,15 @@ a:link {
   color: #ffd900;
 }
 
+.misc-link {
+  line-height: 1.3;
+}
+
+.misc-link::before {
+  content: ">>";
+  color: #ffd900;
+}
+
 .a-underline {
   position: relative;
 }
