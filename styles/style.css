@@ -639,9 +639,23 @@ a:active {
   margin-bottom: 1rem;
 }
 
+.holding-page-logo {
+  width: 10rem;
+  fill: #ffd900;
+  transition: 0.2s;
+  margin-bottom: 2rem;
+  /* TODO: Adjust the width of the logo on large devices here. */
+}
+
+.holding-page-logo:hover {
+  width: 15rem;
+  fill: white;
+  /* TODO: Adjust the width of the logo on large devices here. */
+}
+
 .holding-page-title {
   font-size: 1.5rem;
-  color: var(--holding-page-title-color);
+  color: var(--h1-color);
 }
 
 .holding-page-footer {
