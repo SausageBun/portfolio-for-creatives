@@ -204,8 +204,9 @@ em {
   font-style: italic;
 }
 
-.fineprint {
-  font-size: 0.875rem;
+.copyright {
+  font-size: 0.8rem;
+  color: #888;
 }
 
 .hero-headline {
@@ -336,10 +337,6 @@ a:active {
   line-height: 1.2;
   margin-bottom: 1rem;
 }
-.fineprint {
-  color: #888;
-  font-size: 0.825rem;
-}
 
 /* Hero 
 
@@ -360,6 +357,7 @@ a:active {
 
 .hero-header {
   background: var(--accent-color);
+  margin-bottom: 3rem;
 }
 
 .branding-navigation {
@@ -553,7 +551,7 @@ a:active {
 .footer-item-4 {
   grid-column: 1 / 2;
   grid-row: 4 / 5;
-  margin-bottom: 2rem;
+  margin-bottom: 0.5rem;
   text-align: center;
 }
 
@@ -594,6 +592,7 @@ a:active {
   flex: 1;
   align-items: flex-end;
   justify-content: space-between;
+  margin-top: 4rem;
 }
 
 .arrow {
@@ -663,18 +662,23 @@ a:active {
 
 .holding-page-logo {
   width: 10rem;
+  transition: 0.2s;
 }
 
-.holding-page-wordmark:hover {
+.holding-page-logo:hover {
   width: 15rem;
-  fill: white;
-  /* TODO: Adjust the width of the logo on large devices here. */
 }
 
 .holding-page-wordmark {
   fill: #ffd900;
   transition: 0.2s;
   margin-bottom: 2rem;
+}
+
+.holding-page-wordmark:hover {
+  width: 15rem;
+  fill: white;
+  /* TODO: Adjust the width of the logo on large devices here. */
 }
 
 .holding-page-title {
@@ -687,11 +691,6 @@ a:active {
   place-items: center;
   min-height: 10vh;
   width: 100%;
-}
-
-.holding-page-copyright {
-  font-size: 0.8rem;
-  color: var(--holding-page-footer-color);
 }
 
 /*
@@ -708,6 +707,7 @@ a:active {
 
 .error-logo {
   width: 10rem;
+  transition: 0.2s;
   /* TODO: Adjust the width of the logo on large devices here. */
 }
 
@@ -717,8 +717,11 @@ a:active {
   margin-bottom: 2rem;
 }
 
-.error-wordmark:hover {
+.error-logo:hover {
   width: 15rem;
+}
+
+.error-wordmark:hover {
   fill: white;
   /* TODO: Adjust the width of the logo on large devices here. */
 }
@@ -824,7 +827,12 @@ a:active {
 
   .logo {
     width: 5rem;
+    transition: 0.2s;
     /* DONE: Adjust the width of the logo on large screens here. */
+  }
+
+  .logo:hover {
+    width: 7.5rem;
   }
 
   .grid {
