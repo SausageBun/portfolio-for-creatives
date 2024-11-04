@@ -33,12 +33,12 @@
 
 @keyframes fly {
   0% {
-    transform: translate(-500%, 110vh) rotateZ(0deg);
+    transform: translate(-100%, 110vh) rotate(-15turn);
     opacity: 1;
   }
 
   12.5% {
-    transform: translate(120vw, -120%) rotateZ(20deg);
+    transform: translate(120vw, -120%) rotate(20deg);
   }
 
   25% {
@@ -65,7 +65,7 @@
   }
 
   100% {
-    transform: translate(-200%, 110vh) rotateZ(0deg);
+    transform: translate(-200%, 110vh) rotate(1turn);
     opacity: 1;
   }
 }

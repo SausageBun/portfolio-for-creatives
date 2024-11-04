@@ -345,6 +345,10 @@ a:active {
   line-height: 1.2;
   margin-bottom: 1rem;
 }
+.fineprint {
+  color: #888;
+  font-size: 0.825rem;
+}
 
 /* Hero 
 
@@ -357,7 +361,7 @@ a:active {
 */
 
 .hero {
-  min-height: 80vh;
+  min-height: 55vh;
   display: flex;
   flex-direction: column;
   background: var(--accent-color);
@@ -366,6 +370,7 @@ a:active {
 .hero-header {
   background: var(--accent-color);
 }
+
 .branding-navigation {
   display: flex;
   flex-direction: row;
@@ -376,8 +381,19 @@ a:active {
 
 .logo {
   width: 3rem;
-  fill: rgb(253, 217, 0);
   /* DONE: Adjust the width of the logo on mobile devices here. */
+}
+
+.wordmark {
+  fill: rgb(253, 217, 0);
+  transition: 0.2s;
+  /* TODO: Adjust the width of the logo on large devices here. */
+}
+
+.wordmark:hover,
+.wordmark:active {
+  fill: white;
+  /* TODO: Adjust the width of the logo on large devices here. */
 }
 
 .hero-headline-wrapper {
@@ -681,7 +697,6 @@ a:active {
 .holding-page-copyright {
   font-size: 0.8rem;
   color: var(--holding-page-footer-color);
-  margin-bottom: 0;
 }
 
 /*
@@ -792,25 +807,17 @@ a:active {
     font-size: 1.625rem;
   }
 
-  .wordmark {
-    width: 3rem;
-    fill: rgb(253, 217, 0);
-    transition: 0.2s;
-    /* TODO: Adjust the width of the logo on large devices here. */
-  }
-
-  .wordmark:hover {
-    width: 5rem;
-    fill: white;
-    /* TODO: Adjust the width of the logo on large devices here. */
-  }
-
   .hero {
     min-height: 100vh;
   }
 
   .hero-headline-wrapper {
     padding: 4rem 8rem;
+  }
+
+  .logo {
+    width: 5rem;
+    /* DONE: Adjust the width of the logo on large screens here. */
   }
 
   .grid {
