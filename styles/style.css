@@ -655,22 +655,26 @@ a:active {
   /* For more on grainy gradients see https://grainy-gradients.vercel.app/ */
 }
 
-.holding-page-animation {
-  margin-bottom: 1rem;
+.holding-page-inner-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .holding-page-logo {
   width: 10rem;
-  fill: #ffd900;
-  transition: 0.2s;
-  margin-bottom: 2rem;
-  /* TODO: Adjust the width of the logo on large devices here. */
 }
 
-.holding-page-logo:hover {
+.holding-page-wordmark:hover {
   width: 15rem;
   fill: white;
   /* TODO: Adjust the width of the logo on large devices here. */
+}
+
+.holding-page-wordmark {
+  fill: #ffd900;
+  transition: 0.2s;
+  margin-bottom: 2rem;
 }
 
 .holding-page-title {
@@ -704,13 +708,16 @@ a:active {
 
 .error-logo {
   width: 10rem;
-  fill: #ffd900;
-  transition: 0.2s;
-  margin-bottom: 2rem;
   /* TODO: Adjust the width of the logo on large devices here. */
 }
 
-.error-logo:hover {
+.error-wordmark {
+  fill: #ffd900;
+  transition: 0.2s;
+  margin-bottom: 2rem;
+}
+
+.error-wordmark:hover {
   width: 15rem;
   fill: white;
   /* TODO: Adjust the width of the logo on large devices here. */
