@@ -80,28 +80,28 @@ html {
   --body-typeface: "Urbanist", sans-serif;
   --heading-typeface: "Urbanist", sans-serif;
   --project-title-typeface: "Urbanist", sans-serif;
-  --background-color: #222;
-  --background-color-about: #222;
-  --background-color-footer: #222;
-  --alt-background-color: #000000;
+  --background-color: #fff;
+  --background-color-about: #fff;
+  --background-color-footer: #fff;
+  --alt-background-color: #fafafa;
   --background-color-holding-page: rgba(82, 0, 255, 0.6);
-  --h1-color: #ffd900;
-  --h2-color: #ffd900;
-  --h3-color: #ffffff;
-  --h4-color: #ffffff;
-  --h5-color: #ffffff;
-  --h6-color: #ffffff;
-  --primary-text-color: white;
+  --h1-color: #222;
+  --h2-color: #222;
+  --h3-color: #222;
+  --h4-color: #222222;
+  --h5-color: #222222;
+  --h6-color: #222222;
+  --primary-text-color: #222;
   --holding-page-title-color: #ebedf0;
-  --accent-color: #222222;
+  --accent-color: #fff;
   --overlay-color: #003c71;
   --overlay-title-color: #ffffff;
   --overlay-description-color: #ffffff;
-  --hyperlink-color: white;
+  --hyperlink-color: #222;
   --hyperlink-alternate-color: orangered;
-  --hover-color: white;
-  --visited-color: white;
-  --project-title-color: #ffd900;
+  --hover-color: #003c71;
+  --visited-color: #222;
+  --project-title-color: #222;
   --project-sidebar-background-color: transparent;
   --project-sidebar-text-color: white;
   --heart-color: darkred;
@@ -156,14 +156,14 @@ svg {
 */
 
 h1 {
-  font-size: 2rem;
+  font-size: 2.25rem;
   font-family: var(--heading-typeface);
   margin-bottom: 1rem;
   color: var(--h1-color);
 }
 
 h2 {
-  font-size: 2.25rem;
+  font-size: 2rem;
   font-family: var(--heading-typeface);
   margin-bottom: 1rem;
   color: var(--h2-color);
@@ -180,6 +180,7 @@ h4 {
   font-size: 1.2rem;
   margin-bottom: 1rem;
   color: var(--h4-color);
+  line-height: 130%;
 }
 
 h5 {
@@ -358,7 +359,6 @@ a:active {
 
 .hero-header {
   margin-bottom: 3rem;
-  border: 3px solid red;
 }
 
 .branding-navigation {
@@ -375,14 +375,14 @@ a:active {
 }
 
 .wordmark {
-  fill: rgb(253, 217, 0);
+  fill: #222;
   transition: 0.2s;
   /* TODO: Adjust the width of the logo on large devices here. */
 }
 
 .wordmark:hover,
 .wordmark:active {
-  fill: white;
+  fill: #003c71;
   /* TODO: Adjust the width of the logo on large devices here. */
 }
 
@@ -392,9 +392,9 @@ a:active {
   flex: 1;
   align-items: center;
   justify-content: center;
+  gap: 8rem;
   padding: 2rem 4rem;
   text-align: center;
-  border: 3px solid red;
 }
 
 .hero-icon {
@@ -428,7 +428,6 @@ a:active {
 .work-wrapper {
   flex: 1;
   margin-bottom: 2rem;
-  background-color: red;
 }
 
 /* Padding around work grid and project page */
@@ -819,7 +818,9 @@ a:active {
   h3 {
     font-size: 1.625rem;
   }
-
+  h4 {
+    font-size: 1.2rem;
+  }
   .hero {
     min-height: 100vh;
   }
@@ -829,13 +830,9 @@ a:active {
   }
 
   .logo {
-    width: 5rem;
+    width: 18rem;
     transition: 0.2s;
     /* DONE: Adjust the width of the logo on large screens here. */
-  }
-
-  .logo:hover {
-    width: 7.5rem;
   }
 
   .grid {
