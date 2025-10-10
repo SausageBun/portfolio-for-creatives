@@ -256,7 +256,7 @@ a:link {
   height: 1.5px;
   bottom: 0;
   left: 0;
-  background-color: #ffd900;
+  background-color: var(--hover-color);
   transform: scaleX(0);
   transform-origin: top left;
   transition: transform 0.2s ease;
@@ -355,10 +355,6 @@ a:active {
   flex-direction: column;
   background: var(--accent-color);
   /* var(--accent-color) */
-}
-
-.hero-header {
-  margin-bottom: 3rem;
 }
 
 .branding-navigation {
