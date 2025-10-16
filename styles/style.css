@@ -818,7 +818,7 @@ a:active {
     font-size: 1.2rem;
   }
   .hero {
-    min-height: 100vh;
+    min-height: 94vh;
   }
 
   .hero-headline-wrapper {
@@ -903,7 +903,7 @@ a:active {
   /* Padding around work grid and project page */
   .portfolio,
   .project-wrapper {
-    padding: 0.5rem;
+    padding: 1rem;
   }
 
   /* Project Page Flex Direction on Large Devices */
@@ -962,6 +962,6 @@ a:active {
   /* TODO: Add styles here for XX-large devices. */
 
   .grid {
-    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
   }
 }
