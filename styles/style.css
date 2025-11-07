@@ -158,6 +158,7 @@ svg {
 h1 {
   font-size: 2.25rem;
   font-family: var(--heading-typeface);
+  font-weight: 300;
   color: var(--h1-color);
   margin-bottom: 1rem;
 }
@@ -165,6 +166,7 @@ h1 {
 h2 {
   font-size: 2rem;
   font-family: var(--heading-typeface);
+  font-weight: 300;
   color: var(--h2-color);
   margin-bottom: 1rem;
 }
@@ -186,7 +188,6 @@ h4 {
 h5 {
   font-size: 1.1rem;
   color: var(--h5-color);
-  margin-bottom: 1rem;
 }
 
 h6 {
@@ -449,12 +450,6 @@ a:active {
   border-radius: 0.875rem;
   padding: 1.875rem;
   /* Required to contain overlay size */
-}
-
-.work-page-project-descriptor {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-end;
 }
 
 .work-page-project-thumbnail {
@@ -867,6 +862,12 @@ a:active {
   .work-page-grid-item > a.grayscale:active img,
   .work-page-grid-item > a.grayscale:hover img {
     filter: grayscale(0);
+  }
+
+  .work-page-project-icon {
+    width: 20%;
+    height: auto;
+    align-items: flex-end;
   }
 
   .about {
