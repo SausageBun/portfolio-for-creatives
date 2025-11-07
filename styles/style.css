@@ -945,7 +945,6 @@ a:active {
 
   /* Main Project Image Area on Large Devices */
   .project-details {
-    aspect-ratio: 16/9;
     width: 100%;
     overflow: hidden;
   }
