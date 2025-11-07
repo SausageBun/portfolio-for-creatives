@@ -103,7 +103,7 @@ html {
   --visited-color: #222;
   --project-title-color: #222;
   --project-sidebar-background-color: transparent;
-  --project-sidebar-text-color: white;
+  --project-sidebar-text-color: 222;
   --heart-color: darkred;
   --holding-page-footer-color: #f8f8ff;
   --text-selection-background-color: #003c71;
@@ -287,15 +287,15 @@ a:active {
 }
 
 .navigation-arrow:link {
-  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-width: 0.5px;
   -webkit-text-stroke-color: var(--accent-color);
-  color: transparent;
+  /* color: transparent;*/
 }
 
 .navigation-arrow:active,
 .navigation-arrow:hover {
   color: #ffd900;
-  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-width: 0.5px;
   -webkit-text-stroke-color: #ffd900;
 }
 
@@ -612,7 +612,7 @@ a:active {
   flex: 1;
   align-items: flex-end;
   justify-content: space-between;
-  margin-top: 4rem;
+  padding: 2rem;
 }
 
 .arrow {
@@ -930,7 +930,6 @@ a:active {
 
   /* Project Page Flex Direction on Large Devices */
   .project-wrapper {
-    flex-direction: row;
     margin-top: 4rem;
   }
 
@@ -938,15 +937,17 @@ a:active {
   .project-aside {
     width: 30%;
     height: 65vh;
-    position: -webkit-sticky;
-    position: sticky;
+    /*position: -webkit-sticky;
+    position: sticky;*/
     top: 5vh;
     padding-right: 2rem;
   }
 
   /* Main Project Image Area on Large Devices */
   .project-details {
-    width: 65%;
+    aspect-ratio: 16/9;
+    width: 100%;
+    overflow: hidden;
   }
 
   .project-image {
@@ -960,11 +961,10 @@ a:active {
   }
 
   .project-navigation {
-    justify-content: flex-start;
+    justify-content: space-betwen;
   }
 
   .arrow {
-    padding-right: 1rem;
   }
 }
 
