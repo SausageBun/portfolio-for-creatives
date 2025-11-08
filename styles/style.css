@@ -452,6 +452,12 @@ a:active {
   /* Required to contain overlay size */
 }
 
+.work-page-project-icon {
+  width: 20%;
+  height: auto;
+  align-self: flex-end;
+}
+
 .work-page-project-thumbnail {
   width: 20%;
 }
@@ -812,7 +818,7 @@ a:active {
   /* TODO: Add or adjust styles here for large devices. */
 
   h1 {
-    font-size: 5rem;
+    font-size: 4rem;
   }
 
   h2 {
@@ -867,7 +873,7 @@ a:active {
   .work-page-project-icon {
     width: 20%;
     height: auto;
-    align-items: flex-end;
+    align-self: flex-end;
   }
 
   .about {
@@ -994,7 +1000,9 @@ a:active {
 
 @media (min-width: 1400px) {
   /* TODO: Add styles here for XX-large devices. */
-
+  h1 {
+    font-size: 5rem;
+  }
   .grid {
     grid-template-columns: repeat(auto-fit, minmax(650px, 1fr));
   }
