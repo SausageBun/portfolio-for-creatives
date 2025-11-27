@@ -679,6 +679,7 @@ a:active {
   min-height: 100vh;
   /* DONE: Delete the following if you do not want a grainy gradient background on index.html. Be careful not to delete the closing } */
   background: white;
+  padding: 2rem;
   /* For more on grainy gradients see https://grainy-gradients.vercel.app/ */
 }
 
@@ -736,7 +737,8 @@ a:active {
 .error-logo {
   width: 18rem;
   transition: 0.2s;
-  margin-bottom: 4rem;
+  margin-bottom: 8rem;
+  fill: #222;
   /* TODO: Adjust the width of the logo on large devices here. */
 }
 
