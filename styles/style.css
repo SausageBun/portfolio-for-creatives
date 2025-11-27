@@ -99,7 +99,7 @@ html {
   --overlay-description-color: #ffffff;
   --hyperlink-color: #222;
   --hyperlink-alternate-color: orangered;
-  --hover-color: #003c71;
+  --hover-color: #ffd900;
   --visited-color: #222;
   --project-title-color: #222;
   --project-sidebar-background-color: transparent;
@@ -131,7 +131,7 @@ body::-webkit-scrollbar {
 /* The ::selection CSS pseudo-element applies styles to the part of a document that has been highlighted by the user (such as clicking and dragging the mouse across text). */
 
 ::selection {
-  background: var(--overlay-color);
+  background: var(--hover-color);
 }
 
 /* Make all images responsive */
