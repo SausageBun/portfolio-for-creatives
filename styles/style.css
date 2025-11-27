@@ -121,6 +121,7 @@ body {
   flex-direction: column;
   min-height: 100vh;
   -ms-overflow-style: none; /* IE and Edge */
+  cursor: url("assets/branding-images/jerry-kambashi-cursor.svg"), auto;
 }
 
 body::-webkit-scrollbar {
@@ -374,7 +375,7 @@ a:active {
 
 .wordmark:hover,
 .wordmark:active {
-  fill: #003c71;
+  fill: var(--hover-color);
   /* TODO: Adjust the width of the logo on large devices here. */
 }
 
