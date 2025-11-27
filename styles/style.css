@@ -52,7 +52,7 @@ No media query for `xs` since this is the default in Bootstrap
 html {
   box-sizing: border-box;
   scroll-behavior: smooth;
-  /* cursor: url("../assets/temp/up-cursor.png"), auto !important; */
+  cursor: url("assets/branding-images/jerry-kambashi-cursor.png"), auto !important;
   /* DONE: Change the url above to add a custom cursor. Delete the line above if you want to use the default browser cursor. */
 }
 
@@ -121,7 +121,6 @@ body {
   flex-direction: column;
   min-height: 100vh;
   -ms-overflow-style: none; /* IE and Edge */
-  cursor: url("assets/branding-images/jerry-kambashi-cursor.svg"), auto;
 }
 
 body::-webkit-scrollbar {
@@ -355,6 +354,7 @@ a:active {
   justify-content: space-between;
   padding: 2rem;
   align-items: flex-end;
+  width: 100%;
 }
 
 .sticky-header {
@@ -678,7 +678,7 @@ a:active {
   width: 100%;
   min-height: 100vh;
   /* DONE: Delete the following if you do not want a grainy gradient background on index.html. Be careful not to delete the closing } */
-  background: #222;
+  background: white;
   /* For more on grainy gradients see https://grainy-gradients.vercel.app/ */
 }
 
@@ -734,8 +734,9 @@ a:active {
 /* The best 404 pages have become an art in themselves. Your 404 error page is an opportunity to make a memorable impression on your visitors when they don’t land exactly where they hoped. */
 
 .error-logo {
-  width: 10rem;
+  width: 18rem;
   transition: 0.2s;
+  margin-bottom: 4rem;
   /* TODO: Adjust the width of the logo on large devices here. */
 }
 
@@ -746,7 +747,8 @@ a:active {
 }
 
 .error-logo:hover {
-  width: 15rem;
+  fill: var(--hover-color);
+  width: 14rem;
 }
 
 .error-wordmark:hover {
