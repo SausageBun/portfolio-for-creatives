@@ -81,10 +81,8 @@ html {
   --heading-typeface: "Urbanist", sans-serif;
   --project-title-typeface: "Urbanist", sans-serif;
   --background-color: #fff;
-  --background-color-about: #fff;
   --background-color-footer: #fff;
   --alt-background-color: #fafafa;
-  --background-color-holding-page: rgba(82, 0, 255, 0.6);
   --h1-color: #222;
   --h2-color: #222;
   --h3-color: #222;
@@ -92,7 +90,6 @@ html {
   --h5-color: #222222;
   --h6-color: #222222;
   --primary-text-color: #222;
-  --holding-page-title-color: #ebedf0;
   --accent-color: #fff;
   --overlay-color: #003c71;
   --overlay-title-color: #ffffff;
@@ -105,7 +102,6 @@ html {
   --project-sidebar-background-color: transparent;
   --project-sidebar-text-color: 222;
   --heart-color: darkred;
-  --holding-page-footer-color: #f8f8ff;
   --text-selection-background-color: #003c71;
   --linear-gradient-color-1: #ff057c;
   --linear-gradient-color-2: #8d0b93;
@@ -347,7 +343,11 @@ a:active {
   background: var(--accent-color);
   /* var(--accent-color) */
 }
-
+.holding-hero {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
 .branding-navigation {
   display: flex;
   flex-direction: row;
@@ -503,35 +503,6 @@ a:active {
                                            
 */
 
-.about {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-gap: 3rem;
-  background: var(--background-color-about);
-  padding: 1rem;
-  flex: 1;
-}
-
-.about-item-1 {
-  grid-column: 1 / 2;
-  grid-row: 1 / 2;
-}
-
-.about-item-2 {
-  grid-column: 1 / 2;
-  grid-row: 2 / 3;
-}
-
-.about-item-3 {
-  grid-column: 1 / 2;
-  grid-row: 3 / 4;
-}
-
-.about-item-4 {
-  grid-column: 1 / 2;
-  grid-row: 4 / 5;
-}
-
 /* Global Footer
 
 ███████  ██████   ██████  ████████ ███████ ██████  
@@ -659,69 +630,6 @@ a:active {
   padding: 1rem;
 }
 
-/* 
-
-██   ██  ██████  ██      ██████  ██ ███    ██  ██████  
-██   ██ ██    ██ ██      ██   ██ ██ ████   ██ ██       
-███████ ██    ██ ██      ██   ██ ██ ██ ██  ██ ██   ███ 
-██   ██ ██    ██ ██      ██   ██ ██ ██  ██ ██ ██    ██ 
-██   ██  ██████  ███████ ██████  ██ ██   ████  ██████  
-                                                       
-*/
-
-.holding-page-wrapper {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 1fr auto;
-  place-items: center;
-  text-align: center;
-  width: 100%;
-  min-height: 100vh;
-  /* DONE: Delete the following if you do not want a grainy gradient background on index.html. Be careful not to delete the closing } */
-  background: white;
-  padding: 2rem;
-  /* For more on grainy gradients see https://grainy-gradients.vercel.app/ */
-}
-
-.holding-page-inner-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.holding-page-logo {
-  width: 10rem;
-  transition: 0.2s;
-}
-
-.holding-page-logo:hover {
-  width: 15rem;
-}
-
-.holding-page-wordmark {
-  fill: #ffd900;
-  transition: 0.2s;
-  margin-bottom: 2rem;
-}
-
-.holding-page-wordmark:hover {
-  width: 15rem;
-  fill: white;
-  /* TODO: Adjust the width of the logo on large devices here. */
-}
-
-.holding-page-title {
-  font-size: 1.5rem;
-  color: var(--h1-color);
-}
-
-.holding-page-footer {
-  display: grid;
-  place-items: center;
-  min-height: 10vh;
-  width: 100%;
-}
-
 /*
 ███████ ██████  ██████   ██████  ██████  
 ██      ██   ██ ██   ██ ██    ██ ██   ██ 
@@ -737,7 +645,6 @@ a:active {
 .error-logo {
   width: 18rem;
   transition: 0.2s;
-  margin-bottom: 8rem;
   fill: #222;
   /* TODO: Adjust the width of the logo on large devices here. */
 }
@@ -750,7 +657,6 @@ a:active {
 
 .error-logo:hover {
   fill: var(--hover-color);
-  width: 14rem;
 }
 
 .error-wordmark:hover {
@@ -892,58 +798,8 @@ a:active {
     align-self: flex-end;
   }
 
-  .about {
-    padding: 2rem;
-    grid-template-columns: 1fr 1fr 1fr;
-  }
-
-  .global-footer {
-    padding: 4rem 4rem 0 4rem;
-    grid-template-columns: 1fr 1fr 1fr;
-  }
-
-  .about-item-1 {
-    grid-column: 1 / 2;
-    grid-row: 1 / 2;
-  }
-
-  .footer-item-1 {
-    grid-column: 1 / 2;
-    grid-row: 1 / 2;
-  }
-
-  .about-item-2 {
-    grid-row: 1 / 2;
-    grid-column: 2 / 3;
-  }
-
-  .footer-item-2 {
-    grid-row: 1 / 2;
-    grid-column: 2 / 3;
-  }
-
-  .about-item-3 {
-    grid-row: 1 / 2;
-    grid-column: 3 / 4;
-  }
-
-  .footer-item-3 {
-    grid-row: 1 / 2;
-    grid-column: 3 / 4;
-  }
-
-  .about-item-4 {
-    grid-row: 2 / 3;
-    grid-column: 1 / 4;
-    text-align: center;
-    align-self: end;
-  }
-
-  .footer-item-4 {
-    grid-row: 2 / 3;
-    grid-column: 1 / 4;
-    text-align: center;
-    align-self: end;
+  .holding-page {
+    min-height: 100vh;
   }
 
   /* Padding around work grid and project page */
@@ -958,6 +814,7 @@ a:active {
     grid-template-columns: repeat(6, 1fr);
     grid-template-rows: auto;
     gap: 1rem;
+    flex: 1;
   }
 
   .project-description {
