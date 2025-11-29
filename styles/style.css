@@ -197,6 +197,10 @@ p {
   line-height: 1.3;
 }
 
+.bold {
+  font-weight: 600;
+}
+
 em {
   font-style: italic;
 }
@@ -297,22 +301,6 @@ a:active {
 
 .colored-link {
   color: var(--hyperlink-alternate-color);
-}
-
-.heart {
-  color: var(--heart-color);
-}
-
-.footer-nav-item {
-  line-height: 1.3;
-}
-
-.award-item {
-  line-height: 1.3;
-}
-
-.social-item {
-  line-height: 1.3;
 }
 
 .list-item {
@@ -434,7 +422,13 @@ a:active {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
   grid-gap: 1rem;
-  /* Magical, media-query-less responsiveness is achieved using the repeat() function and the auto placement keywords. To achieve wrapping, we can use the auto-fit. If you're using auto-fit, the content will stretch to fill the entire row width.  Specify a minimum width for the columns, using the minmax() function. The 1fr is what tells the browser to distribute the space between the columns so that each column equally gets one fraction of that space.  */
+  /* Magical, media-query-less responsiveness is achieved using the repeat() function and the auto placement keywords. To achieve wrapping, we can use the auto-fit. If you'
+      re using auto-fit,
+    the content will stretch to fill the entire row width. Specify a minimum
+      width for the columns,
+    using the minmax() function. The 1fr is what tells the browser to distribute
+      the space between the columns so that each column equally gets one
+      fraction of that space. * /;
 }
 
 .work-page-grid-item {
@@ -513,46 +507,11 @@ a:active {
                                                    
 */
 
-.global-footer {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-gap: 3rem;
-  min-height: 60vh;
-  background: var(--background-color-footer);
-  padding: 1rem;
-}
-
 .footer-links {
   display: flex;
   flex-direction: row;
   gap: 1rem;
   align-items: flex-end;
-}
-
-.footer-item-1 {
-  grid-column: 1 / 2;
-  grid-row: 1 / 2;
-}
-
-.footer-item-2 {
-  grid-column: 1 / 2;
-  grid-row: 2 / 3;
-}
-
-.footer-item-3 {
-  grid-column: 1 / 2;
-  grid-row: 3 / 4;
-}
-
-.footer-item-4 {
-  grid-column: 1 / 2;
-  grid-row: 4 / 5;
-  margin-bottom: 0.5rem;
-  text-align: center;
-}
-
-.awards-list {
-  margin-bottom: 2rem;
 }
 
 .footer-icon {
@@ -756,6 +715,7 @@ a:active {
 
   h5 {
     font-size: 1.325rem;
+    line-height: 1.5;
   }
 
   p {
@@ -856,7 +816,20 @@ a:active {
     justify-content: space-betwen;
   }
 
-  .arrow {
+  .about-item-1 {
+    width: 100%;
+    overflow: hidden;
+    grid-column: 1 / 3;
+    grid-row: 1;
+  }
+
+  .about-item-2 {
+    grid-column: 4/6;
+    grid-row: 1;
+  }
+
+  .about-bio {
+    margin-bottom: 2rem;
   }
 }
 
