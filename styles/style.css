@@ -100,12 +100,8 @@ html {
   --visited-color: #222;
   --project-title-color: #222;
   --project-sidebar-background-color: transparent;
-  --project-sidebar-text-color: 222;
-  --heart-color: darkred;
+  --project-sidebar-text-color: #222;
   --text-selection-background-color: #003c71;
-  --linear-gradient-color-1: #ff057c;
-  --linear-gradient-color-2: #8d0b93;
-  --linear-gradient-color-3: #321575;
   --stroke-shadow-color: rgba(0, 0, 0, 0.4);
 }
 
@@ -240,29 +236,6 @@ a:link {
 .social-item::before {
   content: ">>";
   color: #ffd900;
-}
-
-.a-underline {
-  position: relative;
-}
-
-.a-underline::before {
-  content: "";
-  position: absolute;
-  display: block;
-  width: 100%;
-  height: 1.5px;
-  top: 1.5rem;
-  bottom: 0;
-  left: 0;
-  background-color: var(--hover-color);
-  transform: scaleX(0);
-  transform-origin: top left;
-  transition: transform 0.2s ease;
-}
-
-.a-underline:hover::before {
-  transform: scaleX(1);
 }
 
 a:visited {
