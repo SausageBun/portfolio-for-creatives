@@ -379,7 +379,8 @@ a:active {
 
 /* Padding around work grid and project page */
 .portfolio,
-.project-wrapper {
+.project-wrapper,
+.about-wrapper {
   padding: 1rem;
 }
 
@@ -463,6 +464,14 @@ a:active {
                                            
 */
 
+.about-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 4rem;
+  margin-bottom: 2rem;
+}
+
 .about-bio {
   margin-bottom: 4rem;
 }
@@ -507,7 +516,7 @@ a:active {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  gap: 4rem;
+  gap: 2rem;
   margin-bottom: 2rem;
 }
 
@@ -517,6 +526,10 @@ a:active {
   padding: 1rem;
   color: var(--project-sidebar-text-color);
   background: var(--project-sidebar-background-color);
+}
+
+.project-description {
+  margin: 0rem 1rem;
 }
 
 .project-navigation {
@@ -561,7 +574,6 @@ a:active {
 
 .project-details {
   width: 100%;
-  padding: 1rem;
 }
 
 /*
@@ -761,12 +773,21 @@ a:active {
 
   /* Padding around work grid and project page */
   .portfolio,
-  .project-wrapper {
+  .project-wrapper,
+  .about-wrapper {
     padding: 2rem;
   }
 
   /* Project Page Flex Direction on Large Devices */
   .project-wrapper {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: auto;
+    gap: 1rem;
+    flex: 1;
+  }
+
+  .about-wrapper {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     grid-template-rows: auto;
@@ -807,10 +828,6 @@ a:active {
 
   .project-image-container {
     flex-direction: row;
-  }
-
-  .project-navigation {
-    justify-content: space-betwen;
   }
 
   .about-item-1 {
