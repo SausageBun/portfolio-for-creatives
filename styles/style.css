@@ -345,26 +345,12 @@ a:active {
   align-items: center;
   justify-content: center;
   gap: 4rem;
-  padding: 2rem 2rem;
+  padding: 5rem 1.25rem;
   text-align: center;
 }
 
-.hero-icon {
-  font-size: 4rem;
-}
-
-.hero-footer {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  text-align: center;
-}
-
-.hero-footer-navigation {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  padding: 1rem;
+.line-break {
+  display: none;
 }
 
 /* Work Page Layout
@@ -651,7 +637,17 @@ a:active {
 
 /* Medium devices (tablets, 768px and up) */
 
+@media (min-width: 500px) {
+  .line-break {
+    display: block;
+  }
+  /* Hero line break for even smaller devices. */
+}
+
 @media (min-width: 768px) {
+  .line-break {
+    display: block;
+  }
   /* TODO: Add styles here for medium devices. */
 }
 
@@ -702,6 +698,10 @@ a:active {
     width: 18rem;
     transition: 0.2s;
     /* DONE: Adjust the width of the logo on large screens here. */
+  }
+
+  .line-break {
+    display: block;
   }
 
   .grid {
