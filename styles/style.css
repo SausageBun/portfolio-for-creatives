@@ -399,7 +399,7 @@ a:active {
   justify-content: space-between;
   border: 1.5px solid #222;
   border-radius: 0.875rem;
-  padding: 1.875rem;
+  padding: 1.25rem;
   /* Required to contain overlay size */
 }
 
@@ -707,6 +707,10 @@ a:active {
   .grid {
     grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
     grid-gap: 2rem;
+  }
+
+  .work-page-grid-item {
+    padding: 2rem;
   }
 
   /* Grayscale filter with full-colour on hover and tap */
