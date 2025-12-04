@@ -313,7 +313,7 @@ a:active {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  padding: 1.25rem;
+  padding: 1rem;
   align-items: flex-end;
   width: 100%;
 }
@@ -371,7 +371,7 @@ a:active {
 /* Padding around work grid and project page */
 .portfolio,
 .project-wrapper {
-  padding: 0.25rem;
+  padding: 1rem;
 }
 
 /* Defining the work page grid */
