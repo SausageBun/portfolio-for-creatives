@@ -179,6 +179,7 @@ h4 {
 
 h5 {
   font-size: 1.1rem;
+  line-height: 1.4;
   color: var(--h5-color);
 }
 
@@ -454,6 +455,10 @@ a:active {
                                            
 */
 
+.about-bio {
+  margin-bottom: 4rem;
+}
+
 /* Global Footer
 
 ███████  ██████   ██████  ████████ ███████ ██████  
@@ -490,6 +495,7 @@ a:active {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  gap: 4rem;
   margin-bottom: 2rem;
 }
 
