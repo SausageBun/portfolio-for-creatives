@@ -404,7 +404,7 @@ a:active {
   flex-direction: column;
   justify-content: space-between;
   border: 1.5px solid #222;
-  border-radius: 0.875rem;
+  border-radius: 0.45rem;
   padding: 1.25rem;
   /* Required to contain overlay size */
 }
@@ -414,7 +414,7 @@ a:active {
   height: auto;
   align-self: flex-end;
   border: 1.5px solid;
-  border-radius: 0.875rem;
+  border-radius: 0.45rem;
   overflow: hidden;
 }
 
@@ -557,7 +557,7 @@ a:active {
 .project-hero-image {
   width: 100%;
   border: 1.5px solid #222;
-  border-radius: 0.875rem;
+  border-radius: 0.45rem;
   overflow: hidden;
 }
 
@@ -566,7 +566,7 @@ a:active {
 .project-image {
   width: 100%;
   border: 1.5px solid #222;
-  border-radius: 0.875rem;
+  border-radius: 0.45rem;
   overflow: hidden;
 }
 
@@ -762,6 +762,7 @@ a:active {
 
   .work-page-grid-item {
     padding: 2rem;
+    border-radius: 0.875rem;
   }
 
   /* Grayscale filter with full-colour on hover and tap */
@@ -778,6 +779,7 @@ a:active {
     width: 20%;
     height: auto;
     align-self: flex-end;
+    border-radius: 0.875rem;
   }
 
   .holding-page {
@@ -797,6 +799,7 @@ a:active {
     width: 100%;
     grid-column: 1/7;
     grid-row: 1;
+    border-radius: 0.875rem;
   }
 
   .project-wrapper {
@@ -842,15 +845,18 @@ a:active {
 
   .project-image {
     grid-column: 1/7;
+    border-radius: 0.875rem;
     /* TODO: Delete min-height if you want to remove space between project images on project pages on large devices. It is used for the demo page only. */
   }
 
   .project-image-half-1 {
     grid-column: 1/4;
+    border-radius: 0.875rem;
   }
 
   .project-image-half-2 {
     grid-column: 4/7;
+    border-radius: 0.875rem;
   }
 
   .about-wrapper {
