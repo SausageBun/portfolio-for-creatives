@@ -127,6 +127,7 @@ body::-webkit-scrollbar {
 }
 
 /* Make all images responsive */
+iframe,
 img,
 svg {
   max-width: 100%;
@@ -570,22 +571,16 @@ a:active {
   overflow: hidden;
 }
 
-.text-section {
-  width: 100%;
-}
-
-.project-text {
-  width: 100%;
-  font-size: 3.25rem;
-  padding: 3rem;
-}
-
 /* Main Project Image Area */
 
 .project-details {
   display: flex;
   flex-direction: column;
   gap: 1rem;
+}
+
+.vimeo {
+  width: 100%;
 }
 
 /*
