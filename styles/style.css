@@ -343,7 +343,8 @@ a:active {
   /* TODO: Adjust the width of the logo on large devices here. */
 }
 
-.hero-headline-wrapper {
+.hero-headline-wrapper,
+.error-headline-wrapper {
   display: flex;
   flex-direction: column;
   flex: 1;
@@ -776,6 +777,11 @@ a:active {
 
   .error-logo {
     width: 18rem;
+  }
+
+  .error-headline-wrapper {
+    gap: 5rem;
+    padding: 4rem 8rem;
   }
 
   .line-break-desk {
