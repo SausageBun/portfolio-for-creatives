@@ -561,7 +561,6 @@ a:active {
 
 .project-hero-image {
   width: 100%;
-  border: 1.5px solid #222;
   border-radius: 0.45rem;
   overflow: hidden;
 }
@@ -571,7 +570,6 @@ a:active {
 .project-image,
 .about-image {
   width: 100%;
-  border: 1.5px solid #222;
   border-radius: 0.45rem;
   overflow: hidden;
 }
@@ -934,6 +932,8 @@ a:active {
   .grid {
     grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
   }
+
+
 }
 
 /* XX-Large devices (larger desktops, 1400px and up) */
@@ -949,4 +949,5 @@ a:active {
   .grid {
     grid-template-columns: repeat(auto-fit, minmax(650px, 1fr));
   }
+
 }
