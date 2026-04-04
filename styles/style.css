@@ -117,7 +117,7 @@ body {
 }
 
 body::-webkit-scrollbar {
-  display: none;
+  /*display: none;*/
   /* Hide scrollbar for Chrome, Safari and Opera */
 }
 
@@ -408,7 +408,7 @@ a:active {
   overflow: hidden;
   flex-direction: column;
   justify-content: space-between;
-  border: 1.5px solid #222;
+  border: 1px solid #222;
   border-radius: 0.45rem;
   padding: 1.25rem;
   /* Required to contain overlay size */
@@ -418,7 +418,6 @@ a:active {
   width: 20%;
   height: auto;
   align-self: flex-end;
-  border: 1.5px solid;
   border-radius: 0.45rem;
   overflow: hidden;
 }
