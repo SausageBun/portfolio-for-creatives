@@ -767,7 +767,7 @@ a:active {
   }
 
   .logo {
-    width: 18rem;
+    width: 16rem;
     transition: 0.2s;
     /* DONE: Adjust the width of the logo on large screens here. */
   }
