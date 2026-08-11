@@ -680,7 +680,7 @@ display: flex;
   gap: 1rem;
 }
 
-.project-block video {
+.project-block{
   width: 100%;
   max-width: 100%;
   height: auto;
@@ -703,29 +703,13 @@ display: flex;
   aspect-ratio: auto;
 }
 
-.video-wrap {
+.video {
+  display: flex;
   position: relative;
-  width: 100%;
-  height: 100%;
-  display: block;
-  border: none;
-  object-fit: cover;
-   
+  grid-column: 1/-1;
+  padding: 75% 0 0 0;
 }
 
-.video-wrap iframe {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  display: block;
-  border: none;
-  object-fit: cover;
-   
-}
-
-.vimeo {
-  width: 100%;
-}
 
 /*
 ███████ ██████  ██████   ██████  ██████  
