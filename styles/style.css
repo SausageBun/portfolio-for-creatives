@@ -993,6 +993,7 @@ grid-template-columns: repeat(6, 1fr);
   display: flex;
   flex-direction: row;
   gap: 3rem;
+  align-items: center;
  }
 
   .work-page-project-icon {
