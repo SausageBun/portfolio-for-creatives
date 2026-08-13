@@ -637,6 +637,7 @@ display: flex;
   padding: 1rem 1rem 0rem 1rem;
 }
 
+.arrow-2,
 .arrow {
   padding: 0;
 }
@@ -888,6 +889,11 @@ grid-template-columns: repeat(6, 1fr);
   height: auto;
 }
 
+.arrow-2 {
+  grid-column: 4/5;
+}
+
+  .project-navigation,
   .footer {
       display: grid;
     grid-template: 1fr/repeat(6, 1fr);
