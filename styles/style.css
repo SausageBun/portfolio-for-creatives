@@ -856,6 +856,15 @@ display: flex;
   margin: 4rem 1rem 4rem 0rem;
 }
 
+.tablet-text-2-about-sub {
+  grid-column: 4/7;
+  margin: 0rem;
+}
+
+.tablet-text-2-about {
+  grid-column: 4/7;
+  margin: 2rem 0rem;
+}
 
 .info-play {
   display: flex;
