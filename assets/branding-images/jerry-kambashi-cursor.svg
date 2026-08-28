@@ -1,13 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 21.05">
-  <defs>
-    <style>
-      .cls-1 {
-        stroke-width: 0px;
-      }
-    </style>
-  </defs>
-  <g id="Layer_1-2" data-name="Layer 1">
-    <polygon class="cls-1" points="32 12.18 32 21.05 16 8.92 0 21.05 0 12.18 16 0 32 12.18"/>
-  </g>
+<svg id="Layer_2" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 21.05 21.05">
+  <!-- Generator: Adobe Illustrator 30.2.1, SVG Export Plug-In . SVG Version: 2.1.1 Build 1)  -->
+  <path d="M14.69,2.56l-10.18.16,16.54,16.54-1.79,1.8L2.72,4.51l-.16,10.18-2.56.03L.24,1.87,1.87.24l12.85-.24-.03,2.56Z"/>
 </svg>
