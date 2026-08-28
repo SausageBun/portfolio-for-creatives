@@ -84,6 +84,13 @@ html {
   /* DONE: Change the url above to add a custom cursor. Delete the line above if you want to use the default browser cursor. */
 }
 
+/*
+a {
+  cursor: url(/assets/branding-images/jerry-kambashi-cursor-click.png), pointer;
+
+}
+*/
+
 *,
 *:before,
 *:after {
@@ -338,12 +345,13 @@ display: flex;
 
 .info-play {
  display: flex;
- gap: 3rem;
+ gap: 2rem;
 }
 
 .sticky-header {
   position: sticky;
   top: 0;
+  z-index: 1;
 }
 
 
@@ -700,10 +708,24 @@ display: flex;
   margin: 1rem 0rem;
 }
 
+.name {
+  grid-column: 1/3;
+}
+
 .info-play {
   display: flex;
   justify-content: space-between;
   grid-column: 4/7;
+}
+
+.coded-by {
+  grid-column: 4/6;
+}
+
+.top {
+  display: flex;
+  justify-content: flex-end;
+  grid-column: 6/7;
 }
 
 .hero-content {
@@ -818,7 +840,7 @@ grid-template-columns: repeat(6, 1fr);
 .column2 {
   justify-content: space-between;
   padding: 1rem 0rem 1rem 0rem;
-  grid-column: 4/5;
+  grid-column: 4/6;
 }
 
   .grid {
