@@ -844,8 +844,8 @@ grid-template-columns: repeat(6, 1fr);
 }
 
   .grid {
-      display: grid;
-grid-template-columns: repeat(6, 1fr);
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
     grid-template-rows: auto;
     width: 100%;
     padding: 0rem;
@@ -1029,16 +1029,6 @@ grid-template-columns: repeat(6, 1fr);
 @media (min-width: 1200px) {
   /* TODO: Add styles here for X-large devices. */
 
-  .grid {
-     display: grid;
-grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: auto;
-    width: 100%;
-    padding: 0rem;
-    grid-row-gap: 3rem;
-    grid-column-gap: 1.5rem;
-  }
-
 
 }
 
@@ -1050,16 +1040,6 @@ grid-template-columns: repeat(6, 1fr);
   h1 {
     font-size: 4rem;
     line-height: 140%;
-  }
-
-  .grid {
-     display: grid;
-grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: auto;
-    width: 100%;
-    padding: 0rem;
-    grid-row-gap: 3rem;
-    grid-column-gap: 1.5rem;
   }
 
 }
