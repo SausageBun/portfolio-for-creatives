@@ -132,6 +132,8 @@ a {
   --visited-color: #222;
   --text-selection-background-color: #003c71;
   --stroke-shadow-color: rgba(0, 0, 0, 0.4);
+  --padd-mobile: 1rem;
+  --padd-desktop: 1rem;
 }
 
 body {
@@ -145,10 +147,13 @@ body {
   /* IE and Edge */
 }
 
-body::-webkit-scrollbar {
-  /*display: none;*/
-  /* Hide scrollbar for Chrome, Safari and Opera */
+/* body::-webkit-scrollbar {
+  display: none;
+
 }
+Hide scrollbar for Chrome, Safari and Opera
+
+*/
 
 /* The ::selection CSS pseudo-element applies styles to the part of a document that has been highlighted by the user (such as clicking and dragging the mouse across text). */
 
@@ -338,7 +343,7 @@ display: flex;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  padding: 1rem 1rem 1.75rem 1rem;
+  padding: var(--padd-mobile) var(--padd-mobile) 1.75rem var(--padd-mobile);
   width: 100%;
   z-index: 1;
 }
@@ -360,7 +365,7 @@ display: flex;
   flex-direction: column;
   flex: 1;
   gap: 3rem;
-  padding: 1rem;
+  padding: var(--padd-mobile);
 }
 
 
@@ -381,11 +386,16 @@ display: flex;
 }
 
 /* Padding around work grid and project page */
+.more-work,
 .portfolio,
 .project-wrapper,
 .about-wrapper {
-  padding: 1rem;
+  padding: var(--padd-mobile);
 }
+
+ .more-work {
+    margin-bottom: 6rem;
+  }
 
 /* Defining the work page grid */
 .grid {
@@ -400,6 +410,9 @@ display: flex;
       the space between the columns so that each column equally gets one
       fraction of that space. */
 }
+
+.work-page-grid-item-4,
+.work-page-grid-item-3,
 .work-page-grid-item-2,
 .work-page-grid-item {
   display: flex;
@@ -408,28 +421,31 @@ display: flex;
   height: 100%;
   position: relative;
   overflow: hidden;
-  gap: 1rem;
+  gap: var(--padd-mobile);
   /* Required to contain overlay size */
 }
 
 
 
-.work-page-grid-item:hover {
-  visibility: visible;
-  opacity: 1;
-  /* previously .9 opacity */
-}
-
 .zoom img {
-    transition-duration: 0.3s;
+    transition-duration: 0.2s;
    /*  margin: 0 auto; */
     display: block;
 }
 .zoom img:hover {
-    transform: scale(1.1);
-    -webkit-transform: scale(1.1);
-    -moz-transform: scale(1.1);
+    transform: scale(1.03);
+    -webkit-transform: scale(1.03);
+    -moz-transform: scale(1.03);
     z-index: 0;
+}
+
+
+.work-page-grid-item-2:hover
+.overlay,
+.work-page-grid-item:hover
+.overlay {
+  opacity: 1;
+  visibility: visible;
 }
 
 /* 
@@ -455,7 +471,7 @@ display: flex;
 }
 
 .about-item-2 {
-  margin: 1rem;
+  margin: var(--padd-mobile);
 }
 
 /* Global Footer
@@ -473,7 +489,7 @@ display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-self:end;
-  padding: 1rem;
+  padding: var(--padd-mobile);
   width: 100%;
 }
 /* Project Page 
@@ -491,13 +507,13 @@ display: flex;
   flex-direction: column;
   justify-content: space-between;
   gap: 3rem;
-  margin-bottom: 2rem;
+  margin-bottom: 6rem;
 }
 
 /* Sidebar */
 .project-item-1 {
   width: 100%;
-  padding: 0rem 1rem;
+  padding: 0rem var(--padd-mobile);
   color: var(--project-sidebar-text-color);
   background: var(--project-sidebar-background-color);
   margin-top: 2rem;
@@ -506,25 +522,16 @@ display: flex;
 
 .project-copy-1,
 .project-copy-2 {
-  margin: 3rem 1rem;
+  margin: 3rem var(--padd-mobile);
 }
 
 .project-item-2 {
-  margin: 0rem 1rem;
-  margin-bottom: 1rem;
+  margin: 0rem var(--padd-mobile);
+  margin-bottom: var(--padd-mobile);
 }
 
 .project-description {
   margin-bottom: 3rem;
-}
-
-.project-navigation {
-  display: flex;
-  flex-direction: row;
-  flex: 1;
-  align-items: flex-end;
-  justify-content: space-between;
-  padding: 1rem 1rem 0rem 1rem;
 }
 
 .arrow-2,
@@ -535,6 +542,14 @@ display: flex;
 .project-hero-image {
   width: 100%;
    
+  overflow: hidden;
+}
+
+.project-image-test {
+  aspect-ratio: 5/7;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
   overflow: hidden;
 }
 
@@ -562,7 +577,7 @@ display: flex;
 .project-details {
   display: flex;
   flex-direction: column;
-  gap: 1rem;
+  gap: var(--padd-mobile);
 }
 
 .project-block{
@@ -662,26 +677,26 @@ display: flex;
   .branding-navigation {
     display: grid;
     grid-template: 1fr/repeat(6, 1fr);
-    padding: 1rem;
-    gap: 1rem;
+    padding: var(--padd-mobile);
+    gap: var(--padd-mobile);
   }
 
 .project-tablet {
   display: grid;
     grid-template: 1fr/repeat(6, 1fr);
-    gap: 1rem;
+    gap: var(--padd-mobile);
 }
 
   .about-item-2 {
     display: grid;
     grid-template: 1fr/repeat(6, 1fr);
-    gap: 1rem;
+    gap: var(--padd-mobile);
     grid-row-gap: 2rem;
   }
 
 .project-item-2 {
   grid-column: 4/6;
-  margin: 1rem;
+  margin: var(--padd-mobile);
 }
 
 .tablet-text {
@@ -690,22 +705,22 @@ display: flex;
 
 .tablet-text-2-sub {
   grid-column: 4/7;
-  margin: 2rem 1rem 2rem 0rem;
+  margin: 2rem var(--padd-mobile) 2rem 0rem;
 }
 
 .tablet-text-2 {
   grid-column: 4/7;
-  margin: 4rem 1rem 4rem 0rem;
+  margin: 4rem var(--padd-mobile) 4rem 0rem;
 }
 
 .tablet-text-2-about-sub {
   grid-column: 4/7;
-  margin: 0rem 0rem 1rem 0rem;
+  margin: 0rem 0rem var(--padd-mobile) 0rem;
 }
 
 .tablet-text-2-about {
   grid-column: 4/7;
-  margin: 1rem 0rem;
+  margin: var(--padd-mobile) 0rem;
 }
 
 .name {
@@ -731,7 +746,7 @@ display: flex;
 .hero-content {
   display: grid;
 grid-template-columns: repeat(6, 1fr);
-  gap: 1rem;
+  gap: var(--padd-mobile);
   flex: 0;
 }
 
@@ -747,7 +762,7 @@ grid-template-columns: repeat(6, 1fr);
 }
 
 .grid {
-  grid-column-gap: 1rem;
+  grid-column-gap: var(--padd-mobile);
 }
 
 .play-image {
@@ -758,12 +773,12 @@ grid-template-columns: repeat(6, 1fr);
   grid-column: 4/5;
 }
 
-  .project-navigation,
+
   .footer {
       display: grid;
     grid-template: 1fr/repeat(6, 1fr);
-    padding: 1rem;
-    gap: 1rem;
+    padding: var(--padd-mobile);
+    gap: var(--padd-mobile);
   }
 
   /* TODO: Add styles here for medium devices. */
@@ -776,7 +791,7 @@ grid-template-columns: repeat(6, 1fr);
 
   h1 {
     font-size: 3.725rem;
-line-height: 140%
+    line-height: 140%;
   }
 
   h2 {
@@ -804,8 +819,8 @@ line-height: 140%
   .branding-navigation {
     display: grid;
     grid-template: 1fr/repeat(6, 1fr);
-    padding: 1.5rem;
-    gap: 1.5rem;
+    padding: var(--padd-desktop);
+    gap: var(--padd-desktop);
   }
 
 .info-play {
@@ -816,20 +831,20 @@ line-height: 140%
 
   .hero {
     /*min-height: 92vh;*/
-    min-height: 92vh;
+    min-height: 94vh;
   }
 
 
   .hero-headline-wrapper {
     gap: 3rem;
-    padding: 1.5rem 1.5rem 0.5rem 1.5rem;
+    padding: var(--padd-desktop) var(--padd-desktop) 0.5rem var(--padd-desktop);
     justify-content: flex-end;
   }
 
 .hero-content {
   display: grid;
 grid-template-columns: repeat(6, 1fr);
-  gap: 1.5rem;
+  gap: var(--padd-desktop);
 }
 
 .column1{
@@ -845,46 +860,44 @@ grid-template-columns: repeat(6, 1fr);
 
   .grid {
     display: grid;
-    grid-template-columns: repeat(6, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     grid-template-rows: auto;
     width: 100%;
     padding: 0rem;
     grid-row-gap: 3rem;
-    grid-column-gap: 1.5rem;
+    grid-column-gap: var(--padd-desktop);
  
   }
 
   .work-page-grid-item {
-      grid-column: 1/4; 
+      grid-column: 1/2; 
   }
 
 .work-page-grid-item-2 {
-  grid-column: 4/7; 
+  grid-column: 2/3; 
   }
 
-  /* Grayscale filter with full-colour on hover and tap */
-  .work-page-grid-item a.grayscale img {
-    filter: grayscale(100);
+.work-page-grid-item-3 {
+  grid-column: 3/4; 
   }
 
-  .work-page-grid-item>a.grayscale:active img,
-  .work-page-grid-item>a.grayscale:hover img {
-    filter: grayscale(0);
+.work-page-grid-item-4 {
+  grid-column: 4/5; 
   }
 
  .work-page-grid-text {
   display: flex;
-  flex-direction: row;
-  gap: 3rem;
-  align-items: center;
+  flex-direction: column;
  }
 
   /* Padding around work grid and project page */
+  .more-work,
   .portfolio,
   .project-wrapper,
   .about-wrapper {
-    padding: 1.5rem;
+    padding: var(--padd-desktop);
   }
+
 
   /* Project Page Flex Direction on Large Devices */
 
@@ -901,9 +914,9 @@ grid-template-columns: repeat(6, 1fr);
     grid-template-columns: repeat(6, 1fr);
     grid-template-rows: auto;
     grid-row-gap: 3rem;
-    grid-column-gap: 1.5rem;;
+    grid-column-gap: var(--padd-desktop);
     width: 100%;
-    padding: 0rem 1.5rem;
+    padding: 0rem var(--padd-desktop);
  }
 
 
@@ -913,9 +926,9 @@ grid-template-columns: repeat(6, 1fr);
     grid-template-columns: repeat(6, 1fr);
     grid-template-rows: auto;
     grid-row-gap: 3rem;
-    grid-column-gap: 1.5rem;;
+    grid-column-gap: var(--padd-desktop);
     width: 100%;
-    padding: 1.5rem;
+    padding: var(--padd-desktop);
   }
 
 .project-copy-1 {
@@ -953,8 +966,8 @@ grid-template-columns: repeat(6, 1fr);
     overflow: hidden;
     grid-column: 1/-1;
     padding: 0rem;
-    grid-row-gap: 1.5rem;
-    grid-column-gap: 1.5rem;
+    grid-row-gap: var(--padd-desktop);
+    grid-column-gap: var(--padd-desktop);
   }
 
   .project-image {
@@ -975,19 +988,14 @@ grid-template-columns: repeat(6, 1fr);
      
   }
 
-
-.project-navigation {
-  padding: 1.5rem 1.5rem 0rem 1.5rem;
-}
-
   .about-wrapper {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     grid-template-rows: auto;
     grid-row-gap: 3rem;
-    grid-column-gap: 1.5rem;;
+    grid-column-gap: var(--padd-desktop);
     width: 100%;
-    padding: 1.5rem;
+    padding: var(--padd-desktop);
   }
 
   .about-item-1 {
@@ -1019,8 +1027,8 @@ grid-template-columns: repeat(6, 1fr);
   .footer {
       display: grid;
     grid-template: 1fr/repeat(6, 1fr);
-    padding: 1.5rem 1.5rem 1.5rem 1.5rem;
-    gap: 1.5rem;
+    padding: var(--padd-desktop);
+    gap: var(--padd-desktop);
   }
 }
 
