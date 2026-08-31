@@ -287,16 +287,6 @@ a:active {
   /* Tap on mobile */
 }
 
-.navigation-arrow {
-  color: #ffd900;
-}
-
-.navigation-arrow:active,
-.navigation-arrow:hover {
-  color: #ffd900;
-  -webkit-text-stroke-width: 0.5px;
-  -webkit-text-stroke-color: #ffd900;
-}
 
 .colored-link {
   color: var(--hyperlink-alternate-color);
@@ -534,11 +524,6 @@ display: flex;
   margin-bottom: 3rem;
 }
 
-.arrow-2,
-.arrow {
-  padding: 0;
-}
-
 .project-hero-image {
   width: 100%;
    
@@ -686,6 +671,10 @@ display: flex;
     gap: var(--padd-mobile);
 }
 
+.about-bio {
+  margin-bottom: 1rem;
+}
+
   .about-item-2 {
     display: grid;
     grid-template: 1fr/repeat(6, 1fr);
@@ -766,10 +755,6 @@ grid-template-columns: repeat(6, 1fr);
 
 .play-image {
   height: auto;
-}
-
-.arrow-2 {
-  grid-column: 4/5;
 }
 
 
