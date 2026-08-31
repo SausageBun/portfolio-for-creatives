@@ -430,6 +430,10 @@ display: flex;
 }
 
 
+img {
+  border-radius: 5px;
+}
+
 .work-page-grid-item-2:hover
 .overlay,
 .work-page-grid-item:hover
