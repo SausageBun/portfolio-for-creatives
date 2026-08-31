@@ -187,7 +187,7 @@ h1 {
   font-size: 2.75rem;
   font-family: var(--heading-typeface);
   font-weight: 300;
-  line-height: 145%;
+  line-height: 150%;
   color: var(--h1-color);
 
 }
@@ -217,7 +217,7 @@ h4 {
 h5 {
   font-size: 1.125rem;
   font-weight: 300;
-  line-height: 1.65;
+  line-height: 170%;
   color: var(--h5-color);
 }
 
