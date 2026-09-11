@@ -401,6 +401,24 @@ display: flex;
       fraction of that space. */
 }
 
+ .masonry-grid {
+  column-count: 1;
+  column-gap: var(--padd-mobile);
+ }
+
+
+.masonry-item {
+  width: 100%;
+  height: auto;
+  position: relative;
+  display: inline-flex;
+  flex-direction: column;
+  vertical-align: top;
+  margin-bottom: 2rem;
+  gap: var(--padd-mobile);
+}
+
+
 .work-page-grid-item-4,
 .work-page-grid-item-3,
 .work-page-grid-item-2,
@@ -759,6 +777,7 @@ grid-template-columns: repeat(6, 1fr);
   grid-column-gap: var(--padd-mobile);
 }
 
+
 .play-image {
   height: auto;
 }
@@ -881,6 +900,16 @@ grid-template-columns: repeat(6, 1fr);
   display: flex;
   flex-direction: column;
  }
+
+ .masonry-grid {
+  column-count: 2;
+  column-gap: var(--padd-desktop);
+ }
+
+.masonry-item {
+ gap: var(--padd-desktop);
+}
+
 
   /* Padding around work grid and project page */
   .more-work,
@@ -1037,6 +1066,13 @@ grid-template-columns: repeat(6, 1fr);
 @media (min-width: 1400px) {
 
   /* TODO: Add styles here for XX-large devices. */
+  .masonry-grid {
+  column-count: 4;
+  column-gap: var(--padd-desktop);
+ }
+
+
+
   h1 {
     font-size: 4rem;
     line-height: 140%;
