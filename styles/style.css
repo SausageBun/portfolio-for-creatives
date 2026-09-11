@@ -1058,6 +1058,9 @@ grid-template-columns: repeat(6, 1fr);
 @media (min-width: 1200px) {
   /* TODO: Add styles here for X-large devices. */
 
+.column2 {
+  grid-column: 4/5;
+}
 
 }
 
