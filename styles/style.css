@@ -1081,4 +1081,8 @@ grid-template-columns: repeat(6, 1fr);
     line-height: 140%;
   }
 
+  h2 {
+    line-height: 130%;
+  }
+
 }
