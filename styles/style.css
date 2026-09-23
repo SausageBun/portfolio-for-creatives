@@ -409,12 +409,13 @@ display: flex;
 
 .masonry-item {
   width: 100%;
-  height: auto;
+  height: 100%;
   position: relative;
   display: inline-flex;
   flex-direction: column;
   vertical-align: top;
   margin-bottom: 2rem;
+  overflow: hidden;
   gap: var(--padd-mobile);
 }
 
@@ -452,13 +453,6 @@ img {
   border-radius: 5px;
 }
 
-.work-page-grid-item-2:hover
-.overlay,
-.work-page-grid-item:hover
-.overlay {
-  opacity: 1;
-  visibility: visible;
-}
 
 /* 
 
@@ -661,6 +655,34 @@ img {
 }
 
 
+
+.play-image {
+  cursor: pointer;
+}
+
+
+#lightbox {
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, .85);
+  display: none;
+}
+
+#lightbox.active {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#lightbox img {
+width: 90%;
+height: auto;
+object-fit: contain;
+}
+
 /*
 
 
@@ -675,6 +697,8 @@ img {
 /* Medium devices (tablets, 768px and up) */
 
 @media (min-width: 500px) {
+  
+
 
   /* Hero line break for even smaller devices. */
 }
@@ -910,6 +934,11 @@ grid-template-columns: repeat(6, 1fr);
  gap: var(--padd-desktop);
 }
 
+
+#lightbox img {
+  width: auto;
+  height: 90%;
+}
 
   /* Padding around work grid and project page */
   .more-work,
