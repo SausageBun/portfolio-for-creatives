@@ -198,6 +198,7 @@ h2 {
   font-weight: 300;
   color: var(--h2-color);
   margin-bottom: 1rem;
+  line-height: 145%;
 }
 
 h3 {
@@ -390,7 +391,7 @@ display: flex;
 /* Defining the work page grid */
 .grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(min(350px, 100%), 1fr));
   grid-gap: 3rem;
   /* Magical, media-query-less responsiveness is achieved using the repeat() function and the auto placement keywords. To achieve wrapping, we can use the auto-fit. If you'
       re using auto-fit,
@@ -533,7 +534,7 @@ img {
 
 .project-item-2 {
   margin: 0rem var(--padd-mobile);
-  margin-bottom: var(--padd-mobile);
+  margin-bottom: 2rem;
 }
 
 .project-description {
@@ -1088,7 +1089,7 @@ grid-template-columns: repeat(6, 1fr);
   /* TODO: Add styles here for X-large devices. */
 
 .column2 {
-  grid-column: 4/5;
+  grid-column: 4/6;
 }
 
 }
