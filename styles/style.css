@@ -184,7 +184,7 @@ svg {
 */
 
 h1 {
-  font-size: 2.75rem;
+  font-size: 2.027rem;
   font-family: var(--heading-typeface);
   font-weight: 300;
   line-height: 150%;
@@ -193,46 +193,47 @@ h1 {
 }
 
 h2 {
-  font-size: 2.225rem;
+  font-size: 1.802rem;
   font-family: var(--heading-typeface);
   font-weight: 300;
   color: var(--h2-color);
   margin-bottom: 1rem;
-  line-height: 145%;
+  line-height: 150%;
 }
 
 h3 {
-  font-size: 1.325rem;
+  font-size: 1.602rem;
   font-weight: 300;
-  line-height: 160%;
+  line-height: 150%;
   color: var(--h3-color);
 }
 
 h4 {
-  font-size: 1.285rem;
+  font-size: 1.424rem;
   font-weight: 300;
   color: var(--h4-color);
-  line-height: 155%;
+  line-height: 150%;
 }
 
 h5 {
-  font-size: 1.125rem;
+  font-size: 1.266rem;
   font-weight: 300;
-  line-height: 170%;
+  line-height: 150%;
   color: var(--h5-color);
 }
 
 h6 {
-  font-size: 1rem;
+  font-size: 1.125rem;
   font-weight: 300;
   color: var(--h6-color);
   margin-bottom: 1rem;
+  line-height: 150%;
 }
 
 p {
   font-size: 1rem;
   font-weight: 300;
-  line-height: 1.5;
+  line-height: 150%;
 }
 
 .bold {
@@ -788,7 +789,7 @@ grid-template-columns: repeat(6, 1fr);
 }
 
 .column1{
-  grid-column: 1/4;
+  grid-column: 1/3;
   justify-content: flex-start;
 }
 
@@ -824,32 +825,33 @@ grid-template-columns: repeat(6, 1fr);
   /* TODO: Add or adjust styles here for large devices. */
 
   h1 {
-    font-size: 3.725rem;
-    line-height: 140%;
+    font-size: 2.986rem;
+    line-height: 160%;
   }
 
   h2 {
-    font-size: 3.25rem;
+    font-size: 2.488rem;
+    line-height: 150%;
   }
 
   h3 {
-    font-size: 2.25rem;
-    line-height: 155%
+    font-size: 2.074rem;
+    line-height: 160%;
   }
 
   h4 {
-    font-size: 1.625rem;
-    line-height: 155%;
+    font-size: 1.728rem;
+    line-height: 160%;
   }
 
   h5 {
-    font-size: 1.215rem;
-    line-height: 1.65;
+    font-size: 1.44rem;
+    line-height: 160%;
   }
 
   p {
     font-size: 1rem;
-    line-height: 1.5;
+    line-height: 160%;
   }
 
   .branding-navigation {
@@ -884,7 +886,7 @@ grid-template-columns: repeat(6, 1fr);
 }
 
 .column1{
-  grid-column: 1/4;
+  grid-column: 1/3;
   justify-content: flex-start;
 }
 
@@ -1105,14 +1107,13 @@ grid-template-columns: repeat(6, 1fr);
  }
 
 
+h1 {
+  font-size: 3.5832rem;
+}
 
-  h1 {
-    font-size: 4rem;
-    line-height: 140%;
-  }
+h2 {
+  font-size: 2.9856rem;
+}
 
-  h2 {
-    line-height: 130%;
-  }
 
 }
