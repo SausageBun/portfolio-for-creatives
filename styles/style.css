@@ -752,10 +752,6 @@ object-fit: contain;
   margin: 4rem var(--padd-mobile) 4rem 0rem;
 }
 
-.tablet-text-2-about-sub {
-  grid-column: 4/7;
-  margin: 0rem 0rem var(--padd-mobile) 0rem;
-}
 
 .tablet-text-2-about {
   grid-column: 4/7;
@@ -1064,7 +1060,7 @@ grid-template-columns: repeat(6, 1fr);
     overflow: hidden;
     grid-column: 1 / 3;
     grid-row: 1;
-
+    
   }
 
   .about-item-2 {
