@@ -304,10 +304,11 @@ a:active {
 */
 
 .hero {
-display: flex;
+  display: flex;
+  flex: 1;
   flex-direction: column;
   background: var(--accent-color);
-  min-height: 92vh;
+  height: auto;
   /* var(--accent-color) */
 }
 
@@ -316,17 +317,18 @@ display: flex;
   flex: 1;
   flex-direction: column;
   gap: 3rem;
+  
 }
 
-.hero-headline-wrapper{
-  justify-content: flex-end;
+.column1 {
+  width: 50vw;
 }
 
 .column2 {
   display: flex;
   flex-direction: column;
-  flex: 1;
   justify-content: space-between;
+  gap: 3rem;
 }
 
 .branding-navigation {
@@ -356,6 +358,7 @@ display: flex;
   flex: 1;
   gap: 3rem;
   padding: var(--padd-mobile);
+  height: 100vh;
 }
 
 
@@ -781,20 +784,24 @@ object-fit: contain;
 
 .hero-content {
   display: grid;
-grid-template-columns: repeat(6, 1fr);
+  grid-template-columns: repeat(6, 1fr);
   gap: var(--padd-mobile);
   flex: 0;
 }
 
 .column1{
-  grid-column: 1/3;
-  justify-content: flex-start;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  grid-column: 1/3; 
 }
+
 
 .column2 {
   grid-column: 4/6;
   justify-content: space-between;
-  padding: .5rem 0rem .5rem 0rem;
+  height: 30vh;
 }
 
 .grid {
@@ -818,6 +825,8 @@ grid-template-columns: repeat(6, 1fr);
 }
 
 /* Large devices (desktops, 992px and up) */
+
+
 
 @media (min-width: 992px) {
   /* TODO: Add or adjust styles here for large devices. */
@@ -888,15 +897,12 @@ grid-template-columns: repeat(6, 1fr);
 }
 
 .column1{
-  grid-column: 1/3;
-  justify-content: flex-start;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  grid-column: 1/2;
 }
 
-.column2 {
-  justify-content: space-between;
-  padding: 1rem 0rem 1rem 0rem;
-  grid-column: 4/6;
-}
 
   .grid {
     display: grid;
@@ -1094,11 +1100,6 @@ grid-template-columns: repeat(6, 1fr);
 
 
 
-  
-
-.column2 {
-  grid-column: 4/6;
-}
 
 }
 
@@ -1114,5 +1115,4 @@ grid-template-columns: repeat(6, 1fr);
 
 
 }
-
 
