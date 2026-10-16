@@ -800,6 +800,11 @@ object-fit: contain;
   grid-column: 6/7;
 }
 
+.home-headline-wrapper,
+.hero-headline-wrapper {
+  justify-content: flex-end;
+}
+
 .home-content,
 .hero-content {
   display: grid;
@@ -907,6 +912,7 @@ object-fit: contain;
     gap: 3rem;
     padding: var(--padd-desktop) var(--padd-desktop) 0.5rem var(--padd-desktop);
     justify-content: flex-end;
+    flex: 1;
   }
 
 .home-content,
