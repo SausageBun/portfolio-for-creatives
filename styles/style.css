@@ -896,7 +896,7 @@ object-fit: contain;
   .home-headline-wrapper,
   .hero-headline-wrapper {
     gap: 3rem;
-    padding: var(--padd-desktop) var(--padd-desktop) 0.5rem var(--padd-desktop);
+    padding: var(--padd-desktop);
     justify-content: flex-end;
     flex: 1;
   }
