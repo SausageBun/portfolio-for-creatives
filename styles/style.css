@@ -373,7 +373,6 @@ a:active {
   flex-direction: column;
   gap: 3rem;
   padding: var(--padd-mobile);
-  height: 100vh;
   justify-content: flex-end;
 }
 
