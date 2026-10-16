@@ -364,7 +364,7 @@ a:active {
   flex-direction: column;
   gap: 3rem;
   padding: var(--padd-mobile);
-  height: 86vh;
+  height: 76vh;
 }
 
 .hero-headline-wrapper {
