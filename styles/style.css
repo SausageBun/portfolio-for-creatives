@@ -323,7 +323,7 @@ a:active {
   display: flex;
   flex-direction: column;
   gap: 3rem;
-  height: 54vh;
+  height: 50vh;
   justify-content: flex-end;
 }
 
