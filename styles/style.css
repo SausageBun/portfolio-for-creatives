@@ -721,6 +721,8 @@ object-fit: contain;
 @media (min-width: 768px) {
 
 
+ 
+
   .branding-navigation {
     display: grid;
     grid-template: 1fr/repeat(6, 1fr);
@@ -852,39 +854,6 @@ object-fit: contain;
 @media (min-width: 992px) {
   /* TODO: Add or adjust styles here for large devices. */
 
-  h1 {
-    font-size: 2.986rem;
-    line-height: 160%;
-  }
-
-  h2 {
-    font-size: 2.488rem;
-    line-height: 150%;
-  }
-
-  h3 {
-    font-size: 2.074rem;
-    line-height: 160%;
-  }
-
-  h4 {
-    font-size: 1.728rem;
-    line-height: 160%;
-  }
-
-  h5 {
-    font-size: 1.44rem;
-    line-height: 160%;
-  }
-
-  h6 {
-    font-size: 1.2rem;
-    line-height: 160%;
-  }
-
-  p {
-    font-size: 1rem;
-  }
 
   .branding-navigation {
     display: grid;
@@ -1127,7 +1096,41 @@ grid-template-columns: repeat(6, 1fr);
 /* XX-Large devices (larger desktops, 1400px and up) */
 
 @media (min-width: 1400px) {
+h1 {
+    font-size: 2.986rem;
+    line-height: 160%;
+  }
 
+  h2 {
+    font-size: 2.488rem;
+    line-height: 150%;
+  }
+
+  h3 {
+    font-size: 2.074rem;
+    line-height: 160%;
+  }
+
+  h4 {
+    font-size: 1.728rem;
+    line-height: 160%;
+  }
+
+  h5 {
+    font-size: 1.44rem;
+    line-height: 160%;
+  }
+
+  h6 {
+    font-size: 1.2rem;
+    line-height: 160%;
+  }
+
+  p {
+    font-size: 1rem;
+  }
+
+  
   /* TODO: Add styles here for XX-large devices. */
   .masonry-grid {
   column-count: 4;
