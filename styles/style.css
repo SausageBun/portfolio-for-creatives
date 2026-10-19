@@ -91,6 +91,7 @@ a {
 }
 */
 
+
 *,
 *:before,
 *:after {
@@ -118,19 +119,20 @@ a {
   --background-color: #fff;
   --background-color-footer: #fff;
   --alt-background-color: #fafafa;
-  --h1-color: #222;
-  --h2-color: #222;
-  --h3-color: #222;
-  --h4-color: #222222;
-  --h5-color: #222222;
-  --h6-color: #222222;
-  --primary-text-color: #222;
+  --h1-color: #183768;
+  --h2-color: #183768;
+  --h3-color: #183768;
+  --h4-color: #183768;
+  --h5-color: #183768;
+  --h6-color: #183768;
+  --p-color: #222;
+  --primary-text-color: #183768;
   --accent-color: #fff;
   --hyperlink-color: #222;
   --hyperlink-alternate-color: orangered;
   --hover-color: #ffd900;
   --visited-color: #222;
-  --text-selection-background-color: #003c71;
+  --text-selection-background-color: #183768;
   --stroke-shadow-color: rgba(0, 0, 0, 0.4);
   --padd-mobile: 1rem;
   --padd-desktop: 1rem;
@@ -232,6 +234,7 @@ p {
   font-size: 1rem;
   font-weight: 300;
   line-height: 175%;
+  color: var(--p-color);
 }
 
 .bold {
@@ -258,11 +261,6 @@ a:link {
   color: var(--hyperlink-color);
   text-decoration: none;
   transition: 0.2s;
-}
-
-.social-item::before {
-  content: ">>";
-  color: #ffd900;
 }
 
 a:visited {
@@ -292,6 +290,14 @@ a:active {
   color: var(--hyperlink-alternate-color);
 }
 
+
+h6 > a:visited {
+  color: var(--h6-color);
+}
+
+h6 > a:hover {
+  color: var(--hover-color);
+}
 
 /* Hero 
 
@@ -672,6 +678,9 @@ figure.project-image-test {
 ██      ██      ██   ██    ██    
 ██      ███████ ██   ██    ██    
 */
+
+
+
 
 .play-page {
   display: grid;
