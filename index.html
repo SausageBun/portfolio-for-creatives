@@ -13,38 +13,33 @@
   <link rel="stylesheet" href="./styles/style.css" />
 </head>
 
-<body>
-  <section class="hero" id="hero">
-    <header class="sticky-header">
-      <ul class="branding-navigation">
-        <li class="name">
-          <p>
-            <a href="index.html"><span>Jerry Kambashi</span></a>
-          </p>
-        </li>
-        <li class="info-play">
-          <p>
-            <a href="about.html">Info</a>
-          </p>
-          <p>
-            <a href="contact.html">Contact</a>
-          </p>
-        </li>
-      </ul>
-    </header>
+<body id="hero">
+  <header class="branding-navigation">
+      <p class="name">
+        <a class="box-fill" href="index.html"><span>Jerry Kambashi</span></a>
+      </p>
+      <div class="info-play">
+        <p>
+          <a class="box-fill" href="about.html">Info</a>
+        </p>
+        <p>
+          <a class="box-fill" href="contact.html">Contact</a>
+        </p>
+      </div>
+  </header>
+  <section class="hero">
     <div class="home-headline-wrapper">
         <div class="home-content">
           <div class="column1">
             <p>I'm a graphic designer that distils brands to create precise and unique identities.</p>
           </div>
           <div class="column2">
-            <p>
-              <a href="https://okdave.ca/" target="_blank">↗ Prev. @ OKDAVE</a>
-              <br>
-              <a href="https://www.destinationvancouver.com/" target="_blank">↗ Vancouver, BC</a>
+            <p class="column2-gap">
+              <a class="box" href="https://okdave.ca/" target="_blank">↗ Prev. @ OKDAVE</a>
+              <a class="box" href="https://www.destinationvancouver.com/" target="_blank">↗ Vancouver, BC</a>
             </p>
             <p>
-              <a href="play.html">→ Play</a>
+              <a class="box" href="play.html">→ Play</a>
             </a>
             </p>
           </div>
@@ -141,14 +136,14 @@
       </ul>
     </section>
   </main>
-
   <footer class="footer">
     <p>© 2026</p>
     <p class="coded-by">Coded by yours truly.</p>
     <p class="top">
-      <a href="#hero">↑</a>
+      <a class="box-fill" href="#hero">↑</a>
     </p>
   </footer>
+  <script src="/js/header.js"></script>
 </body>
 
 </html>
