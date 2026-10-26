@@ -351,7 +351,6 @@ a:active {
   display: flex;
   flex-direction: column;
   gap: 3rem;
-  height: 50vh;
 }
 
 .home-content {
@@ -421,7 +420,7 @@ a:active {
   flex-direction: column;
   gap: 3rem;
   padding: var(--padd-mobile);
-  justify-content: flex-end;
+  justify-content: flex-start;
 }
 
 .home-content-top {
