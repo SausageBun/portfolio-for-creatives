@@ -473,7 +473,7 @@ a:active {
 .grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(min(350px, 100%), 1fr));
-  grid-gap: 3rem;
+  grid-gap: 4rem;
   /* Magical, media-query-less responsiveness is achieved using the repeat() function and the auto placement keywords. To achieve wrapping, we can use the auto-fit. If you'
       re using auto-fit,
     the content will stretch to fill the entire row width. Specify a minimum
