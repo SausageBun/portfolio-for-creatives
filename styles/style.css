@@ -191,7 +191,7 @@ h1 {
   font-size: 2.027rem;
   font-family: var(--heading-typeface);
   font-weight: 300;
-  line-height: 150%;
+  line-height: 160%;
   color: var(--h1-color);
 
 }
@@ -201,13 +201,13 @@ h2 {
   font-family: var(--heading-typeface);
   font-weight: 300;
   color: var(--h2-color);
-  line-height: 150%;
+  line-height: 160%;
 }
 
 h3 {
   font-size: 1.602rem;
   font-weight: 300;
-  line-height: 150%;
+  line-height: 160%;
   color: var(--h3-color);
 }
 
@@ -215,13 +215,13 @@ h4 {
   font-size: 1.424rem;
   font-weight: 300;
   color: var(--h4-color);
-  line-height: 150%;
+  line-height: 160%;
 }
 
 h5 {
   font-size: 1.266rem;
   font-weight: 300;
-  line-height: 150%;
+  line-height: 160%;
   color: var(--h5-color);
 }
 
@@ -229,13 +229,13 @@ h6 {
   font-size: 1.125rem;
   font-weight: 300;
   color: var(--h6-color);
-  line-height: 150%;
+  line-height: 160%;
 }
 
 p {
   font-size: 1rem;
   font-weight: 300;
-  line-height: 175%;
+  line-height: 165%;
   color: var(--p-color);
 }
 
@@ -246,15 +246,6 @@ p {
 em {
   font-style: italic;
 }
-
-.subhead {
-margin-bottom: .15rem;
-}
-
-.list {
-  margin-bottom: .5rem;
-}
-
 
 
 /* Hyperlink Styles */
@@ -295,8 +286,6 @@ a:active {
 .colored-link {
   color: var(--hyperlink-alternate-color);
 }
-
-
 
 
 
@@ -344,6 +333,13 @@ a:active {
 }
 
 
+.list {
+  display: flex;
+  flex-direction:column;
+  gap: .25rem;
+}
+
+
 /* Hero 
 
 ██   ██ ███████ ██████   ██████  
@@ -386,7 +382,6 @@ a:active {
   flex-direction: column;
   justify-content: space-between;
   gap: 3rem;
-  margin-bottom: 2rem;
 }
 
 .column2-gap {
@@ -419,7 +414,7 @@ a:active {
 
 .info-play {
  display: flex;
- gap: var(--padd-mobile);
+ gap: .5rem;
 }
 
 
@@ -491,7 +486,7 @@ a:active {
 .work-page-grid-text {
   display: flex;
   flex-direction: column;
-  gap: .5rem;
+  gap: .75rem;
  }
 
  .masonry-grid {
@@ -523,7 +518,7 @@ a:active {
   height: 100%;
   position: relative;
   overflow: hidden;
-  gap: var(--padd-mobile);
+  gap: 1.5rem;
   /* Required to contain overlay size */
 }
 
@@ -582,13 +577,20 @@ img {
   flex-direction: column;
   justify-content: space-between;
   gap: 3rem;
-  margin-bottom: 2rem;
 }
 
-.about-bio {
-  margin-bottom: 5rem;
+.about-item-2 {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
 }
 
+
+.about-copy {
+  display: flex;
+  flex-direction:column;
+  gap: 1.25rem;
+}
 
 /* Global Footer
 
@@ -623,7 +625,7 @@ img {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  gap: 3rem;
+  gap: 4rem;
   margin-bottom: 6rem;
 }
 
@@ -631,24 +633,26 @@ img {
 .project-item-1 {
   display: flex;
   flex-direction: column;
-  width: 100%;
-  color: var(--project-sidebar-text-color);
-  background: var(--project-sidebar-background-color);
-  margin-top: 2rem;
   grid-column: 1/4;
-  gap: .5rem;
-}
-
-.project-copy-2 {
-  margin: 3rem 0;
+  gap: .75rem;
 }
 
 .project-item-2 {
-  margin-bottom: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
 }
 
-.project-description {
-  margin-bottom: 3rem;
+.nugget {
+  display: flex;
+  flex-direction: column;
+  gap: .75rem;
+}
+
+.project-copy {
+  display: flex;
+  flex-direction: column;
+  gap: .75rem;
 }
 
 .project-hero-image {
@@ -707,10 +711,16 @@ figure.project-image-test {
 }
 
 
-.project-tablet {
+.project-info-wrapper {
   display: flex;
   flex-direction: column;
-  gap: 2rem;
+  gap: 3rem;
+}
+
+.copy-wrapper {
+  display: flex;
+  flex-direction: column;
+  padding: 3rem 0;
 }
 
 .about-image {
@@ -827,61 +837,35 @@ object-fit: contain;
 
  
 
-  .branding-navigation {
-    display: grid;
-    grid-template: 1fr/repeat(6, 1fr);
-    padding: var(--padd-mobile);
-    gap: var(--padd-mobile);
-  }
-
-.project-tablet {
+.branding-navigation {
   display: grid;
-    grid-template: 1fr/repeat(6, 1fr);
-    gap: var(--padd-mobile);
+  grid-template: 1fr/repeat(6, 1fr);
+  padding: var(--padd-mobile);
+  gap: var(--padd-mobile);
 }
 
-.about-bio {
-  margin-bottom: 1rem;
+.project-info-wrapper {
+  display: grid;
+  grid-template: 1fr/repeat(6, 1fr);
+  gap: var(--padd-mobile);
 }
 
-  .about-item-2 {
-    display: grid;
-    grid-template: 1fr/repeat(6, 1fr);
-    gap: var(--padd-mobile);
-    grid-row-gap: 2rem;
-  }
-
-.about-text {
-  display: flex;
-  flex-direction: column;
-  grid-column: 1/4;
-  gap: 2rem;
+.copy-wrapper {
+  display: grid;
+  grid-template: 1fr/repeat(6, 1fr);
+  grid-column-gap: var(--padd-mobile);
 }
+
+
 
 .project-item-2 {
   grid-column: 4/6;
-  margin: var(--padd-mobile);
 }
 
-.tablet-text {
-  grid-column: 1/4;
-}
-
-.tablet-text-2-sub {
+.project-copy {
   grid-column: 4/7;
-  margin: 2rem var(--padd-mobile) 2rem 0rem;
 }
 
-.tablet-text-2 {
-  grid-column: 4/7;
-  margin: 4rem var(--padd-mobile) 4rem 0rem;
-}
-
-
-.tablet-text-2-about {
-  grid-column: 4/7;
-  margin: var(--padd-mobile) 0rem;
-}
 
 .name {
   grid-column: 1/3;
@@ -951,25 +935,37 @@ object-fit: contain;
   grid-column: 4/6;
   justify-content: space-between;
   height: 30vh;
-  margin-bottom: 0;
 }
 
 .grid {
   grid-column-gap: var(--padd-mobile);
 }
 
+.about-wrapper {
+  display: grid;
+  grid-template: 1fr/repeat(6, 1fr);
+  grid-column-gap: 1rem;
+}
+
+.about-item-1 {
+  grid-column: 1/3;
+}
+
+.about-item-2 {
+  grid-column: 4/7;
+}
 
 .play-image {
   height: auto;
 }
 
 
-  .footer {
-      display: grid;
-    grid-template: 1fr/repeat(6, 1fr);
-    padding: var(--padd-mobile);
-    gap: var(--padd-mobile);
-  }
+.footer {
+  display: grid;
+  grid-template: 1fr/repeat(6, 1fr);
+  padding: var(--padd-mobile);
+  gap: var(--padd-mobile);
+}
 
   /* TODO: Add styles here for medium devices. */
 }
@@ -995,12 +991,12 @@ object-fit: contain;
 
 
 
-  .home-headline-wrapper,
-  .hero-headline-wrapper {
-    padding: var(--padd-desktop);
-    justify-content: flex-end;
-    flex: 1;
-  }
+.home-headline-wrapper,
+.hero-headline-wrapper {
+  padding: var(--padd-desktop);
+  justify-content: flex-end;
+  flex: 1;
+}
 
 .home-content,
 .hero-content {
@@ -1081,130 +1077,119 @@ object-fit: contain;
 
   /* Project Page Flex Direction on Large Devices */
 
-  .project-hero-image {
-    width: 100%;
-    grid-column: 1/-1;
-    grid-row: 1;
-     
-  }
-
- .project-tablet {
-   grid-column: 1/-1;
-    display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: auto;
-    grid-row-gap: 3rem;
-    grid-column-gap: var(--padd-desktop);
-    width: 100%;
-    padding: 0rem var(--padd-desktop);
- }
-
-
-  .project-wrapper {
-    grid-column: 1/-1;
-    display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: auto;
-    grid-row-gap: 3rem;
-    grid-column-gap: var(--padd-desktop);
-    width: 100%;
-    padding: var(--padd-desktop);
-  }
-
-
-  .project-copy-2 {
-    grid-column: 4/6;
-    margin: 3rem 0rem;
-  }
-
-  .project-item-2 {
-    grid-column: 4/6;
-
-  }
-
-  /* Sidebar on Large Devices */
-  .project-item-1 {
-    width: 100%;
-    grid-column: 1/3;
-    padding: 0rem;
-
-    /*position: -webkit-sticky;
-    position: sticky;*/
-  }
-
-  /* Main Project Image Area on Large Devices */
-  .project-details {
-    display: grid;
-grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: auto;
-    width: 100%;
-    overflow: hidden;
-    grid-column: 1/-1;
-    padding: 0rem;
-    grid-row-gap: var(--padd-desktop);
-    grid-column-gap: var(--padd-desktop);
-  }
-
-  .project-image {
-    display: flex;
-    justify-content: flex-start;
-    grid-column: 1 / -1;
-     
-    /* TODO: Delete min-height if you want to remove space between project images on project pages on large devices. It is used for the demo page only. */
-  }
-
-  .project-image-half-1 {
-    grid-column: 1 / 4;
-     
-  }
-
-  .project-image-half-2 {
-    grid-column: 4 / 7;
-     
-  }
-
-  .about-wrapper {
-    display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: auto;
-    grid-row-gap: 3rem;
-    grid-column-gap: var(--padd-desktop);
-    width: 100%;
-    padding: var(--padd-desktop);
-  }
-
-  .about-item-1 {
-    width: 100%;
-    overflow: hidden;
-    grid-column: 1 / 3;
-    grid-row: 1;
+.project-hero-image {
+  width: 100%;
+  grid-column: 1/-1;
+  grid-row: 1;
     
-  }
+}
 
-  .about-item-2 {
-    display: flex;
-    flex-direction: column;
-    grid-column: 4/6;
-    grid-row: 1;
-    margin: 0;
-  }
+.project-info-wrapper {
+  width: 100%;
+  grid-column: 1/-1;
+  grid-row-gap: 3rem;
+  padding: 0rem var(--padd-desktop);
+}
 
-  .about-bio {
-    margin-bottom: 2rem;
-  }
+.copy-wrapper {
+  grid-column: 1/-1;
+  grid-column-gap: var(--padd-desktop);
+}
+
+.project-wrapper {
+  width: 100%;
+  grid-column: 1/-1;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: auto;
+  grid-column-gap: var(--padd-desktop);
+  padding: var(--padd-desktop);
+}
+
+
+
+/* Sidebar on Large Devices */
+.project-item-1 {
+  width: 100%;
+  grid-column: 1/3;
+  padding: 0rem;
+
+  /*position: -webkit-sticky;
+  position: sticky;*/
+}
+
+/* Main Project Image Area on Large Devices */
+.project-details {
+  display: grid;
+grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: auto;
+  width: 100%;
+  overflow: hidden;
+  grid-column: 1/-1;
+  padding: 0rem;
+  grid-row-gap: var(--padd-desktop);
+  grid-column-gap: var(--padd-desktop);
+}
+
+.project-image {
+  display: flex;
+  justify-content: flex-start;
+  grid-column: 1 / -1;
+    
+  /* TODO: Delete min-height if you want to remove space between project images on project pages on large devices. It is used for the demo page only. */
+}
+
+.project-image-half-1 {
+  grid-column: 1 / 4;
+    
+}
+
+.project-image-half-2 {
+  grid-column: 4 / 7;
+    
+}
+
+.project-copy {
+  grid-column: 4/6;
+}
+
+.about-wrapper {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: auto;
+  grid-row-gap: 3rem;
+  grid-column-gap: var(--padd-desktop);
+  width: 100%;
+  padding: var(--padd-desktop);
+}
+
+.about-item-1 {
+  width: 100%;
+  overflow: hidden;
+  grid-column: 1 / 3;
+  grid-row: 1;
+  
+}
+
+.about-item-2 {
+  display: flex;
+  flex-direction: column;
+  grid-column: 4/6;
+  gap: 5rem;
+}
 
 .play-image {
   width: 100%;
-    height: auto;
-    overflow: hidden;
+  height: auto;
+  overflow: hidden;
 }
 
-  .footer {
-      display: grid;
-    grid-template: 1fr/repeat(6, 1fr);
-    padding: var(--padd-desktop);
-    gap: var(--padd-desktop);
-  }
+.footer {
+    display: grid;
+  grid-template: 1fr/repeat(6, 1fr);
+  padding: var(--padd-desktop);
+  gap: var(--padd-desktop);
+}
 }
 
 /* X-Large devices (large desktops, 1200px and up)*/
