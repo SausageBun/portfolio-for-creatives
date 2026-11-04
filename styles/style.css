@@ -54,13 +54,13 @@ Imported stylesheets. Remove the ones you do not want to use.
 
 /* DONE: Delete any stylesheets that you do not want to use. */
 
-@import url("make-something-fly.css");
+
 /* @import url("animated-gradient.css"); */
 /* @import url("text-stroke.css"); */
 /* @import url("stroke-shadow.css"); */
 /* @import url("experiments.css"); */
 /* @import url("style-guide.css"); */
-@import url("scroll-to-top.css");
+
 
 /*
 
@@ -472,8 +472,10 @@ a:active {
 /* Defining the work page grid */
 .grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(min(350px, 100%), 1fr));
-  grid-gap: 4rem;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  grid-column-gap: var(--padd-mobile);
+  grid-row-gap: 4rem;
+  
   /* Magical, media-query-less responsiveness is achieved using the repeat() function and the auto placement keywords. To achieve wrapping, we can use the auto-fit. If you'
       re using auto-fit,
     the content will stretch to fill the entire row width. Specify a minimum
@@ -507,10 +509,6 @@ a:active {
   gap: var(--padd-mobile);
 }
 
-
-.work-page-grid-item-4,
-.work-page-grid-item-3,
-.work-page-grid-item-2,
 .work-page-grid-item {
   display: flex;
   flex-direction: column;
@@ -834,9 +832,6 @@ object-fit: contain;
 
 @media (min-width: 768px) {
 
-
- 
-
 .branding-navigation {
   display: grid;
   grid-template: 1fr/repeat(6, 1fr);
@@ -937,9 +932,12 @@ object-fit: contain;
   height: 30vh;
 }
 
+
 .grid {
-  grid-column-gap: var(--padd-mobile);
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: auto;
 }
+
 
 .about-wrapper {
   display: grid;
@@ -1011,45 +1009,6 @@ object-fit: contain;
   grid-column: 1/2;
 }
 
-
-  .grid {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: auto;
-    width: 100%;
-    padding: 0rem;
-    grid-row-gap: 3rem;
-    grid-column-gap: var(--padd-desktop);
- 
-  }
-
-  .work-page-grid-item {
-      grid-column: 1/2; 
-  }
-
-.work-page-grid-item-2 {
-  grid-column: 2/3; 
-  }
-
-.work-page-grid-item-3 {
-  grid-column: 3/4; 
-  }
-
-.work-page-grid-item-4 {
-  grid-column: 4/5; 
-  }
-
-.home-work-grid {
-  grid-template-columns: repeat(2, 1fr);
-}
-
-.home-work-grid > .work-page-grid-item-3 {
-  grid-column: 1/2;
-}
-
-.home-work-grid > .work-page-grid-item-4 {
-  grid-column: 2/3;
-}
 
  .masonry-grid {
   column-count: 2;
@@ -1205,17 +1164,15 @@ grid-template-columns: repeat(6, 1fr);
 /* XX-Large devices (larger desktops, 1400px and up) */
 
 @media (min-width: 1400px) {
-  .home-work-grid {
-    grid-template-columns: repeat(4, 1fr);
-  }
 
-  .home-work-grid > .work-page-grid-item-3 {
-    grid-column: 3/4;
-  }
 
-  .home-work-grid > .work-page-grid-item-4 {
-    grid-column: 4/5;
-  }
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-column-gap: var(--padd-desktop);
+}
+
 
 .index-graphic {
   grid-column: 3/4;
@@ -1223,45 +1180,96 @@ grid-template-columns: repeat(6, 1fr);
 
 
 h1 {
-    font-size: 2.986rem;
-    line-height: 160%;
-  }
+  font-size: 2.986rem;
+  line-height: 160%;
+}
 
-  h2 {
-    font-size: 2.488rem;
-    line-height: 150%;
-  }
+h2 {
+  font-size: 2.488rem;
+  line-height: 150%;
+}
 
-  h3 {
-    font-size: 2.074rem;
-    line-height: 160%;
-  }
+h3 {
+  font-size: 2.074rem;
+  line-height: 160%;
+}
 
-  h4 {
-    font-size: 1.728rem;
-    line-height: 160%;
-  }
+h4 {
+  font-size: 1.728rem;
+  line-height: 160%;
+}
 
-  h5 {
-    font-size: 1.44rem;
-    line-height: 160%;
-  }
+h5 {
+  font-size: 1.44rem;
+  line-height: 160%;
+}
 
-  h6 {
-    font-size: 1.2rem;
-    line-height: 160%;
-  }
+h6 {
+  font-size: 1.2rem;
+  line-height: 160%;
+}
 
-  p {
-    font-size: 1rem;
-  }
+p {
+  font-size: 1rem;
+}
 
   
-  /* TODO: Add styles here for XX-large devices. */
-  .masonry-grid {
-  column-count: 4;
-  column-gap: var(--padd-desktop);
- }
+/* TODO: Add styles here for XX-large devices. */
+.masonry-grid {
+column-count: 4;
+column-gap: var(--padd-desktop);
+}
 
 
 }
+
+
+/* Work Page Layout
+
+ANIMATIONS
+
+
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+.reveal {
+  opacity: 0;
+  animation: fade-in ease 0.4s forwards;
+}
+
+.reveal:nth-child(1) {
+  animation-delay: 0s;
+}
+
+.reveal:nth-child(2) {
+  animation-delay: 0.2s;
+}
+
+.reveal:nth-child(3) {
+  animation-delay: 0.4s;
+}
+
+.reveal:nth-child(4) {
+  animation-delay: 0.6s;
+}
+
+.reveal:nth-child(5) {
+  animation-delay: 0.8s;
+}
+
+.reveal:nth-child(6) {
+  animation-delay: 1s;
+}
+
+
+*/
