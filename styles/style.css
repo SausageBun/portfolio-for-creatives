@@ -1243,7 +1243,7 @@ ANIMATIONS
 .reveal2,
 .reveal {
   opacity: 0;
-  animation: fade-in ease 0.4s forwards;
+  animation: fade-in ease 0.3s forwards;
 }
 
 .reveal:nth-child(1) {
@@ -1251,67 +1251,67 @@ ANIMATIONS
 }
 
 .reveal:nth-child(2) {
-  animation-delay: 0.1s;
-}
-
-.reveal:nth-child(3) {
   animation-delay: 0.2s;
 }
 
-.reveal:nth-child(4) {
-  animation-delay: 0.3s;
-}
-
-.reveal:nth-child(5) {
+.reveal:nth-child(3) {
   animation-delay: 0.4s;
 }
 
+.reveal:nth-child(4) {
+  animation-delay: 0.6s;
+}
+
+.reveal:nth-child(5) {
+  animation-delay: 0.8s;
+}
+
 .reveal:nth-child(6) {
-  animation-delay: 0.5s;
+  animation-delay: 1s;
 }
 
 
 
 
 .reveal2:nth-child(1) {
-  animation-delay: 0.2s;
+  animation-delay: 0.4s;
 }
 
 .reveal2:nth-child(2) {
-  animation-delay: 0.3s;
+  animation-delay: 0.6s;
 }
 
 
 .reveal2-1:nth-child(1) {
-  animation-delay: 0.1s;
+  animation-delay: 0.2s;
 }
 .reveal2-1:nth-child(2) {
-  animation-delay: 0.2s;
+  animation-delay: 0.4s;
 }
 
 
 
 
 .reveal3:nth-child(1) {
-  animation-delay: 0.3s;
+  animation-delay: 0.6s;
 }
 .reveal3:nth-child(2) {
-  animation-delay: 0.4s;
+  animation-delay: 0.8s;
 }
 
 
 
 .reveal4:nth-child(1) {
-  animation-delay: 0.4s;
+  animation-delay: 0.8s;
 }
 .reveal4:nth-child(2) {
-  animation-delay: 0.5s;
+  animation-delay: 1s;
 }
 
 
 .reveal5:nth-child(1) {
-  animation-delay: 0.5s;
+  animation-delay: 1s;
 }
 .reveal5:nth-child(2) {
-  animation-delay: 0.6s;
+  animation-delay: 1.2s;
 }
