@@ -260,7 +260,7 @@ a:visited {
   color: var(--visited-color);
 }
 
-p > .box-fill {
+p>.box-fill {
   color: white;
 }
 
@@ -293,7 +293,7 @@ a:active {
   display: inline-block;
   padding: var(--padd-butt);
   border: 1px solid var(--hyperlink-color);
-  border-radius: var(--border-radius); 
+  border-radius: var(--border-radius);
 }
 
 .box:hover {
@@ -329,13 +329,13 @@ a:active {
   display: inline-block;
   padding: var(--padd-butt);
   border: 1px dashed var(--hyperlink-color);
-  border-radius: var(--border-radius); 
+  border-radius: var(--border-radius);
 }
 
 
 .list {
   display: flex;
-  flex-direction:column;
+  flex-direction: column;
   gap: .25rem;
 }
 
@@ -413,8 +413,8 @@ a:active {
 
 
 .info-play {
- display: flex;
- gap: .5rem;
+  display: flex;
+  gap: .5rem;
 }
 
 
@@ -465,9 +465,9 @@ a:active {
   padding: var(--padd-mobile);
 }
 
- .more-work {
-    margin-bottom: 6rem;
-  }
+.more-work {
+  margin-bottom: 6rem;
+}
 
 /* Defining the work page grid */
 .grid {
@@ -475,7 +475,7 @@ a:active {
   grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
   grid-column-gap: var(--padd-mobile);
   grid-row-gap: 4rem;
-  
+
   /* Magical, media-query-less responsiveness is achieved using the repeat() function and the auto placement keywords. To achieve wrapping, we can use the auto-fit. If you'
       re using auto-fit,
     the content will stretch to fill the entire row width. Specify a minimum
@@ -489,12 +489,12 @@ a:active {
   display: flex;
   flex-direction: column;
   gap: .75rem;
- }
+}
 
- .masonry-grid {
+.masonry-grid {
   column-count: 1;
   column-gap: var(--padd-mobile);
- }
+}
 
 
 .masonry-item {
@@ -523,15 +523,16 @@ a:active {
 
 
 .zoom img {
-    transition-duration: 0.2s;
-   /*  margin: 0 auto; */
-    display: block;
+  transition-duration: 0.2s;
+  /*  margin: 0 auto; */
+  display: block;
 }
+
 .zoom img:hover {
-    transform: scale(1.03);
-    -webkit-transform: scale(1.03);
-    -moz-transform: scale(1.03);
-    z-index: 0;
+  transform: scale(1.03);
+  -webkit-transform: scale(1.03);
+  -moz-transform: scale(1.03);
+  z-index: 0;
 }
 
 
@@ -586,7 +587,7 @@ img {
 
 .about-copy {
   display: flex;
-  flex-direction:column;
+  flex-direction: column;
   gap: 1.25rem;
 }
 
@@ -605,10 +606,11 @@ img {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  align-self:end;
+  align-self: end;
   padding: var(--padd-mobile);
   width: 100%;
 }
+
 /* Project Page 
 
 ██████  ██████   ██████       ██ ███████  ██████ ████████     ██████   █████   ██████  ███████ 
@@ -655,7 +657,7 @@ img {
 
 .project-hero-image {
   width: 100%;
-   
+
   overflow: hidden;
 }
 
@@ -672,7 +674,7 @@ figure.project-image-test {
 }
 
 .project-image {
-    aspect-ratio: 16 / 9;
+  aspect-ratio: 16 / 9;
 }
 
 .project-image-half-1,
@@ -680,7 +682,7 @@ figure.project-image-test {
 .project-image {
   width: 100%;
   height: 100%;
-   
+
   overflow: hidden;
 }
 
@@ -699,13 +701,13 @@ figure.project-image-test {
   gap: var(--padd-mobile);
 }
 
-.project-block{
+.project-block {
   width: 100%;
   max-width: 100%;
   height: auto;
   object-fit: contain;
   display: block;
-   
+
 }
 
 
@@ -723,7 +725,7 @@ figure.project-image-test {
 
 .about-image {
   width: 100%;
-   
+
   overflow: hidden;
 }
 
@@ -758,17 +760,7 @@ figure.project-image-test {
 
 
 
-██████  ██       █████  ██    ██ 
-██   ██ ██      ██   ██  ██  ██  
-██████  ██      ███████   ████   
-██      ██      ██   ██    ██    
-██      ███████ ██   ██    ██    
-*/
-
-
-
-
-.play-page {
+██████ ██ █████ ██ ██ ██ ██ ██ ██ ██ ██ ██ ██████ ██ ███████ ████ ██ ██ ██ ██ ██ ██ ███████ ██ ██ ██ */ .play-page {
   display: grid;
   place-items: center;
 }
@@ -805,9 +797,9 @@ figure.project-image-test {
 }
 
 #lightbox img {
-width: 90%;
-height: auto;
-object-fit: contain;
+  width: 90%;
+  height: auto;
+  object-fit: contain;
 }
 
 /*
@@ -824,7 +816,7 @@ object-fit: contain;
 /* Medium devices (tablets, 768px and up) */
 
 @media (min-width: 500px) {
-  
+
 
 
   /* Hero line break for even smaller devices. */
@@ -832,138 +824,138 @@ object-fit: contain;
 
 @media (min-width: 768px) {
 
-.branding-navigation {
-  display: grid;
-  grid-template: 1fr/repeat(6, 1fr);
-  padding: var(--padd-mobile);
-  gap: var(--padd-mobile);
-}
+  .branding-navigation {
+    display: grid;
+    grid-template: 1fr/repeat(6, 1fr);
+    padding: var(--padd-mobile);
+    gap: var(--padd-mobile);
+  }
 
-.project-info-wrapper {
-  display: grid;
-  grid-template: 1fr/repeat(6, 1fr);
-  gap: var(--padd-mobile);
-}
+  .project-info-wrapper {
+    display: grid;
+    grid-template: 1fr/repeat(6, 1fr);
+    gap: var(--padd-mobile);
+  }
 
-.copy-wrapper {
-  display: grid;
-  grid-template: 1fr/repeat(6, 1fr);
-  grid-column-gap: var(--padd-mobile);
-}
-
-
-
-.project-item-2 {
-  grid-column: 4/6;
-}
-
-.project-copy {
-  grid-column: 4/7;
-}
+  .copy-wrapper {
+    display: grid;
+    grid-template: 1fr/repeat(6, 1fr);
+    grid-column-gap: var(--padd-mobile);
+  }
 
 
-.name {
-  grid-column: 1/3;
-}
 
-.info-play {
-  display: flex;
-  justify-content: space-between;
-  grid-column: 4/7;
-}
+  .project-item-2 {
+    grid-column: 4/6;
+  }
 
-.coded-by {
-  grid-column: 4/6;
-}
-
-.top {
-  display: flex;
-  justify-content: flex-end;
-  grid-column: 6/7;
-}
-
-.hero {
-  /*min-height: 92vh;*/
-  min-height: 88vh;
-}
-
-.hero-contact {
-  min-height: auto;
-}
-
-.home-headline-wrapper,
-.hero-headline-wrapper {
-  justify-content: flex-end;
-  flex: 1;
-  gap: 6rem;
-}
-
-.home-content,
-.hero-content {
-  display: grid;
-  grid-template-columns: repeat(6, 1fr);
-  gap: var(--padd-desktop);
-  row-gap: 3rem;
-  height: auto;
-}
-
-.home-content-top {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: var(--padd-desktop);
-}
-
-.index-graphic {
-  grid-column: 3/4;
-}
-
-.column1{
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  grid-column: 1/3; 
-}
+  .project-copy {
+    grid-column: 4/7;
+  }
 
 
-.column2 {
-  grid-column: 4/6;
-  justify-content: space-between;
-  height: 30vh;
-}
+  .name {
+    grid-column: 1/3;
+  }
+
+  .info-play {
+    display: flex;
+    justify-content: space-between;
+    grid-column: 4/7;
+  }
+
+  .coded-by {
+    grid-column: 4/6;
+  }
+
+  .top {
+    display: flex;
+    justify-content: flex-end;
+    grid-column: 6/7;
+  }
+
+  .hero {
+    /*min-height: 92vh;*/
+    min-height: 88vh;
+  }
+
+  .hero-contact {
+    min-height: auto;
+  }
+
+  .home-headline-wrapper,
+  .hero-headline-wrapper {
+    justify-content: flex-end;
+    flex: 1;
+    gap: 6rem;
+  }
+
+  .home-content,
+  .hero-content {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: var(--padd-desktop);
+    row-gap: 3rem;
+    height: auto;
+  }
+
+  .home-content-top {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: var(--padd-desktop);
+  }
+
+  .index-graphic {
+    grid-column: 3/4;
+  }
+
+  .column1 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    grid-column: 1/3;
+  }
 
 
-.grid {
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: auto;
-}
+  .column2 {
+    grid-column: 4/6;
+    justify-content: space-between;
+    height: 30vh;
+  }
 
 
-.about-wrapper {
-  display: grid;
-  grid-template: 1fr/repeat(6, 1fr);
-  grid-column-gap: 1rem;
-}
-
-.about-item-1 {
-  grid-column: 1/3;
-}
-
-.about-item-2 {
-  grid-column: 4/7;
-}
-
-.play-image {
-  height: auto;
-}
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+  }
 
 
-.footer {
-  display: grid;
-  grid-template: 1fr/repeat(6, 1fr);
-  padding: var(--padd-mobile);
-  gap: var(--padd-mobile);
-}
+  .about-wrapper {
+    display: grid;
+    grid-template: 1fr/repeat(6, 1fr);
+    grid-column-gap: 1rem;
+  }
+
+  .about-item-1 {
+    grid-column: 1/3;
+  }
+
+  .about-item-2 {
+    grid-column: 4/7;
+  }
+
+  .play-image {
+    height: auto;
+  }
+
+
+  .footer {
+    display: grid;
+    grid-template: 1fr/repeat(6, 1fr);
+    padding: var(--padd-mobile);
+    gap: var(--padd-mobile);
+  }
 
   /* TODO: Add styles here for medium devices. */
 }
@@ -981,49 +973,49 @@ object-fit: contain;
     gap: var(--padd-desktop);
   }
 
-.info-play {
-  display: flex;
-  justify-content: space-between;
-  grid-column: 4/7;
-}
+  .info-play {
+    display: flex;
+    justify-content: space-between;
+    grid-column: 4/7;
+  }
 
 
 
-.home-headline-wrapper,
-.hero-headline-wrapper {
-  padding: var(--padd-desktop);
-  justify-content: flex-end;
-  flex: 1;
-}
+  .home-headline-wrapper,
+  .hero-headline-wrapper {
+    padding: var(--padd-desktop);
+    justify-content: flex-end;
+    flex: 1;
+  }
 
-.home-content,
-.hero-content {
-  gap: var(--padd-desktop);
-  row-gap: 6rem;
-}
+  .home-content,
+  .hero-content {
+    gap: var(--padd-desktop);
+    row-gap: 6rem;
+  }
 
-.column1{
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  grid-column: 1/2;
-}
-
-
- .masonry-grid {
-  column-count: 2;
-  column-gap: var(--padd-desktop);
- }
-
-.masonry-item {
- gap: var(--padd-desktop);
-}
+  .column1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    grid-column: 1/2;
+  }
 
 
-#lightbox img {
-  width: auto;
-  height: 90%;
-}
+  .masonry-grid {
+    column-count: 2;
+    column-gap: var(--padd-desktop);
+  }
+
+  .masonry-item {
+    gap: var(--padd-desktop);
+  }
+
+
+  #lightbox img {
+    width: auto;
+    height: 90%;
+  }
 
   /* Padding around work grid and project page */
   .more-work,
@@ -1036,119 +1028,119 @@ object-fit: contain;
 
   /* Project Page Flex Direction on Large Devices */
 
-.project-hero-image {
-  width: 100%;
-  grid-column: 1/-1;
-  grid-row: 1;
-    
-}
+  .project-hero-image {
+    width: 100%;
+    grid-column: 1/-1;
+    grid-row: 1;
 
-.project-info-wrapper {
-  width: 100%;
-  grid-column: 1/-1;
-  grid-row-gap: 3rem;
-  padding: 0rem var(--padd-desktop);
-}
+  }
 
-.copy-wrapper {
-  grid-column: 1/-1;
-  grid-column-gap: var(--padd-desktop);
-}
+  .project-info-wrapper {
+    width: 100%;
+    grid-column: 1/-1;
+    grid-row-gap: 3rem;
+    padding: 0rem var(--padd-desktop);
+  }
 
-.project-wrapper {
-  width: 100%;
-  grid-column: 1/-1;
-  display: grid;
-  grid-template-columns: repeat(6, 1fr);
-  grid-template-rows: auto;
-  grid-column-gap: var(--padd-desktop);
-  padding: var(--padd-desktop);
-}
+  .copy-wrapper {
+    grid-column: 1/-1;
+    grid-column-gap: var(--padd-desktop);
+  }
 
-
-
-/* Sidebar on Large Devices */
-.project-item-1 {
-  width: 100%;
-  grid-column: 1/3;
-  padding: 0rem;
-
-  /*position: -webkit-sticky;
-  position: sticky;*/
-}
-
-/* Main Project Image Area on Large Devices */
-.project-details {
-  display: grid;
-grid-template-columns: repeat(6, 1fr);
-  grid-template-rows: auto;
-  width: 100%;
-  overflow: hidden;
-  grid-column: 1/-1;
-  padding: 0rem;
-  grid-row-gap: var(--padd-desktop);
-  grid-column-gap: var(--padd-desktop);
-}
-
-.project-image {
-  display: flex;
-  justify-content: flex-start;
-  grid-column: 1 / -1;
-    
-  /* TODO: Delete min-height if you want to remove space between project images on project pages on large devices. It is used for the demo page only. */
-}
-
-.project-image-half-1 {
-  grid-column: 1 / 4;
-    
-}
-
-.project-image-half-2 {
-  grid-column: 4 / 7;
-    
-}
-
-.project-copy {
-  grid-column: 4/6;
-}
-
-.about-wrapper {
-  display: grid;
-  grid-template-columns: repeat(6, 1fr);
-  grid-template-rows: auto;
-  grid-row-gap: 3rem;
-  grid-column-gap: var(--padd-desktop);
-  width: 100%;
-  padding: var(--padd-desktop);
-}
-
-.about-item-1 {
-  width: 100%;
-  overflow: hidden;
-  grid-column: 1 / 3;
-  grid-row: 1;
-  
-}
-
-.about-item-2 {
-  display: flex;
-  flex-direction: column;
-  grid-column: 4/6;
-  gap: 5rem;
-}
-
-.play-image {
-  width: 100%;
-  height: auto;
-  overflow: hidden;
-}
-
-.footer {
+  .project-wrapper {
+    width: 100%;
+    grid-column: 1/-1;
     display: grid;
-  grid-template: 1fr/repeat(6, 1fr);
-  padding: var(--padd-desktop);
-  gap: var(--padd-desktop);
-}
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: auto;
+    grid-column-gap: var(--padd-desktop);
+    padding: var(--padd-desktop);
+  }
+
+
+
+  /* Sidebar on Large Devices */
+  .project-item-1 {
+    width: 100%;
+    grid-column: 1/3;
+    padding: 0rem;
+
+    /*position: -webkit-sticky;
+  position: sticky;*/
+  }
+
+  /* Main Project Image Area on Large Devices */
+  .project-details {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: auto;
+    width: 100%;
+    overflow: hidden;
+    grid-column: 1/-1;
+    padding: 0rem;
+    grid-row-gap: var(--padd-desktop);
+    grid-column-gap: var(--padd-desktop);
+  }
+
+  .project-image {
+    display: flex;
+    justify-content: flex-start;
+    grid-column: 1 / -1;
+
+    /* TODO: Delete min-height if you want to remove space between project images on project pages on large devices. It is used for the demo page only. */
+  }
+
+  .project-image-half-1 {
+    grid-column: 1 / 4;
+
+  }
+
+  .project-image-half-2 {
+    grid-column: 4 / 7;
+
+  }
+
+  .project-copy {
+    grid-column: 4/6;
+  }
+
+  .about-wrapper {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: auto;
+    grid-row-gap: 3rem;
+    grid-column-gap: var(--padd-desktop);
+    width: 100%;
+    padding: var(--padd-desktop);
+  }
+
+  .about-item-1 {
+    width: 100%;
+    overflow: hidden;
+    grid-column: 1 / 3;
+    grid-row: 1;
+
+  }
+
+  .about-item-2 {
+    display: flex;
+    flex-direction: column;
+    grid-column: 4/6;
+    gap: 5rem;
+  }
+
+  .play-image {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+  }
+
+  .footer {
+    display: grid;
+    grid-template: 1fr/repeat(6, 1fr);
+    padding: var(--padd-desktop);
+    gap: var(--padd-desktop);
+  }
 }
 
 /* X-Large devices (large desktops, 1200px and up)*/
@@ -1167,58 +1159,58 @@ grid-template-columns: repeat(6, 1fr);
 
 
 
-.grid {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-column-gap: var(--padd-desktop);
-}
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-column-gap: var(--padd-desktop);
+  }
 
 
-.index-graphic {
-  grid-column: 3/4;
-}
+  .index-graphic {
+    grid-column: 3/4;
+  }
 
 
-h1 {
-  font-size: 2.986rem;
-  line-height: 160%;
-}
+  h1 {
+    font-size: 2.986rem;
+    line-height: 160%;
+  }
 
-h2 {
-  font-size: 2.488rem;
-  line-height: 150%;
-}
+  h2 {
+    font-size: 2.488rem;
+    line-height: 150%;
+  }
 
-h3 {
-  font-size: 2.074rem;
-  line-height: 160%;
-}
+  h3 {
+    font-size: 2.074rem;
+    line-height: 160%;
+  }
 
-h4 {
-  font-size: 1.728rem;
-  line-height: 160%;
-}
+  h4 {
+    font-size: 1.728rem;
+    line-height: 160%;
+  }
 
-h5 {
-  font-size: 1.44rem;
-  line-height: 160%;
-}
+  h5 {
+    font-size: 1.44rem;
+    line-height: 160%;
+  }
 
-h6 {
-  font-size: 1.2rem;
-  line-height: 160%;
-}
+  h6 {
+    font-size: 1.2rem;
+    line-height: 160%;
+  }
 
-p {
-  font-size: 1rem;
-}
+  p {
+    font-size: 1rem;
+  }
 
-  
-/* TODO: Add styles here for XX-large devices. */
-.masonry-grid {
-column-count: 4;
-column-gap: var(--padd-desktop);
-}
+
+  /* TODO: Add styles here for XX-large devices. */
+  .masonry-grid {
+    column-count: 4;
+    column-gap: var(--padd-desktop);
+  }
 
 
 }
@@ -1228,6 +1220,8 @@ column-gap: var(--padd-desktop);
 
 ANIMATIONS
 
+
+*/
 
 
 @keyframes fade-in {
@@ -1242,6 +1236,11 @@ ANIMATIONS
 }
 
 
+.reveal5,
+.reveal4,
+.reveal3,
+.reveal2-1,
+.reveal2,
 .reveal {
   opacity: 0;
   animation: fade-in ease 0.4s forwards;
@@ -1252,24 +1251,67 @@ ANIMATIONS
 }
 
 .reveal:nth-child(2) {
-  animation-delay: 0.2s;
+  animation-delay: 0.1s;
 }
 
 .reveal:nth-child(3) {
-  animation-delay: 0.4s;
+  animation-delay: 0.2s;
 }
 
 .reveal:nth-child(4) {
-  animation-delay: 0.6s;
+  animation-delay: 0.3s;
 }
 
 .reveal:nth-child(5) {
-  animation-delay: 0.8s;
+  animation-delay: 0.4s;
 }
 
 .reveal:nth-child(6) {
-  animation-delay: 1s;
+  animation-delay: 0.5s;
 }
 
 
-*/
+
+
+.reveal2:nth-child(1) {
+  animation-delay: 0.2s;
+}
+
+.reveal2:nth-child(2) {
+  animation-delay: 0.3s;
+}
+
+
+.reveal2-1:nth-child(1) {
+  animation-delay: 0.1s;
+}
+.reveal2-1:nth-child(2) {
+  animation-delay: 0.2s;
+}
+
+
+
+
+.reveal3:nth-child(1) {
+  animation-delay: 0.3s;
+}
+.reveal3:nth-child(2) {
+  animation-delay: 0.4s;
+}
+
+
+
+.reveal4:nth-child(1) {
+  animation-delay: 0.4s;
+}
+.reveal4:nth-child(2) {
+  animation-delay: 0.5s;
+}
+
+
+.reveal5:nth-child(1) {
+  animation-delay: 0.5s;
+}
+.reveal5:nth-child(2) {
+  animation-delay: 0.6s;
+}
